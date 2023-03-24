@@ -3,21 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 小呆&小萌的情侣博客
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
+description: '记录两个程序员的爱情点滴，学习笔记的小天地'
+keywords: 情侣博客 情侣空间 夫妻博客 情侣记录
+author: 小呆&小萌
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://chinalink.github.io
-permalink: :year/:month/:day/:title/
+url: http://xdxmblog.com
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
@@ -105,3 +105,39 @@ deploy:
   type: 'git'
   repo: git@github_xd:Chinalink/hxd.github.io.git
   branch: master
+
+# Extensions
+Plugins:
+  - hexo-generator-feed
+  - hexo-generator-sitemap
+  - hexo-generator-baidu-sitemap
+  - hexo-symbols-count-time
+  - hexo-generator-searchdb
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+# Google siteMap
+sitemap:
+  path: sitemap.xml
+# Baidu siteMap
+baidusitemap:
+  path: baidusitemap.xml
+# 设置博客单词统计
+symbols_count_time:
+  # 文章字数统计
+  symbols: true
+  # 文章阅读时间统计
+  time: true
+  # 站点总字数统计
+  total_symbols: false
+  # 站点总阅读时间统计
+  total_time: false
+  exclude_codeblock: false
+#本地搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
