@@ -699,7 +699,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: true
+  enable: false
   total_visitors: false #开启总访客（uv）
   total_visitors_icon: fa fa-user
   total_views: false #开启总访问数（pv）
