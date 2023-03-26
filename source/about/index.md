@@ -4,7 +4,9 @@ date: 2023-03-25 04:01:10
 type: 'about'
 ---
 
-#### 他和她的故事
+---
+
+#### 我和她的故事
 
 我叫小呆，她叫小萌。我们的故事源自两个初入职场的菜鸟程序员，加入了同一个前端技术交流 QQ 群(_^▽^_)。
 
@@ -18,6 +20,8 @@ type: 'about'
 
 我们的故事还在继续...
 
+---
+
 #### 关于博客
 
 从早期的织梦 cms、Emlog，到后来的 Wordpress，现在的 Hexo，一直在折腾的路上，从未停歇...
@@ -30,7 +34,7 @@ type: 'about'
 
 2023，我们的情侣博客重新起航，之前的笔记和点滴，会慢慢的补充回来。
 
----
+
 
 域名：www.xdxmblog.cn
 
@@ -42,14 +46,10 @@ type: 'about'
 
 ---
 
-![image-20230326015308452](http://img.xdxmblog.cn/images/image-20230326015308452.png)
+#### 博客早期设计稿
 
-<div align="center">（早期个人博客设计稿截图）</div>
+![早期个人博客设计稿](http://img.xdxmblog.cn/images/image-20230326154517914.png)
 
-![image-20230326015351040](http://img.xdxmblog.cn/images/image-20230326015351040.png)
+![早期个人博客设计稿](http://img.xdxmblog.cn/images/images_20230326162126.png)
 
-<div align="center">（早期个人博客设计稿截图）</div>
-
-![image-20230326015417344](http://img.xdxmblog.cn/images/image-20230326015417344.png)
-
-<div align="center">（情侣博客设计稿截图）</div>
+![情侣博客截图](http://img.xdxmblog.cn/images/images_20230326170257.png)
