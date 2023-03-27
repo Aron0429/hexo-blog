@@ -211,7 +211,7 @@ footer:
     color: '#ff0000'
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: 小呆&小萌
 
   # Powered by Hexo & NexT
   powered: false

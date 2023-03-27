@@ -1,6 +1,6 @@
 ---
-title: { { title } }
-date: { { date } }
+title: {{ title }}
+date: {{ date }}
 author: 小呆
 categories:
 tags:
