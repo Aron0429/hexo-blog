@@ -52,4 +52,4 @@ type: 'about'
 
 ![早期个人博客设计稿](http://img.xdxmblog.cn/images/images_20230326162126.png)
 
-![情侣博客截图](http://img.xdxmblog.cn/images/images_20230326170257.png)
+![情侣博客设计稿](http://img.xdxmblog.cn/images/images_20230326170257.png)

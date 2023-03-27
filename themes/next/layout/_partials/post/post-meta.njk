@@ -48,6 +48,15 @@
     </span>
   {%- endif %}
 
+  {%- if post.author %}
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-user"></i>
+      </span>
+      <span class="post-meta-item-text">作者 {{ post.author }}</span>
+    </span>
+  {%- endif %}
+
   {# LeanCloud PageView #}
   {%- if theme.leancloud_visitors.enable %}
     <span id="{{ url_for(post.path) }}" class="post-meta-item leancloud_visitors" data-flag-title="{{ post.title }}" title="{{ __('post.views') }}">

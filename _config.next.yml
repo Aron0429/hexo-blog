@@ -265,8 +265,8 @@ reward_settings:
   animation: false
 
 reward:
-  wechatpay: /images/wechatpay.jpg
-  alipay: /images/alipay.jpg
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -379,8 +379,8 @@ reading_progress:
   # Available values: left | right
   start_at: left
   # Available values: top | bottom
-  position: top
-  reversed: bottom
+  position: bottom
+  reversed: false
   color: '#37c6c0'
   height: 3px
 
