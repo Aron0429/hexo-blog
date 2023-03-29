@@ -665,10 +665,10 @@ comments:
 waline:
   enable: true #是否开启
   serverURL: waline.xdxmblog.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
-  libUrl: https://www.xdxmblog.cn/waline/waline.js
-  cssUrl: https://www.xdxmblog.cn/waline/waline.css
+  libUrl: https://www.xdxmblog.cn/js/waline/waline.js
+  cssUrl: https://www.xdxmblog.cn/js/waline/waline.css
   commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
-  pageview: false # 文章阅读统计
+  pageview: true # 文章阅读统计
   locale:
     placeholder: 这里是小呆&小萌的情侣博客，欢迎评论与我们互动 #评论框的默认文字
   # Custom emoji
