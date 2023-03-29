@@ -660,6 +660,37 @@ comments:
     #gitalk:
     #  order: -2
 
+# Waline
+# For more information: https://waline.js.org, https://github.com/walinejs/waline
+waline:
+  enable: true #是否开启
+  serverURL: waline.xdxmblog.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
+  libUrl: https://www.xdxmblog.cn/waline/waline.js
+  cssUrl: https://www.xdxmblog.cn/waline/waline.css
+  commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
+  pageview: false # 文章阅读统计
+  locale:
+    placeholder: 这里是小呆&小萌的情侣博客，欢迎评论与我们互动 #评论框的默认文字
+  # Custom emoji
+  emoji: false
+  #   - https://unpkg.com/@waline/emojis@1.0.1/weibo
+  #   - https://unpkg.com/@waline/emojis@1.0.1/alus
+  #   - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+  #   - https://unpkg.com/@waline/emojis@1.0.1/qq
+  #   - https://unpkg.com/@waline/emojis@1.0.1/tieba
+  #   - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+  meta: # 自定义评论框上面的三个输入框的内容
+    - nick
+    - mail
+    - link
+  requiredMeta:
+    - nick
+  lang: zh-CN # 语言, 可选值: en, zh-cn
+  pageSize: 10 # 评论数量多少时显示分页
+  imageUploader: false # 图片上传
+  search: false # 表情搜索
+  copyright: false #版权信息
+
 # Disqus
 # For more information: https://disqus.com
 disqus:
@@ -807,7 +838,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: true
+  enable: false
   total_visitors: false
   total_visitors_icon: fa fa-user
   total_views: false
@@ -900,27 +931,3 @@ vendors:
 css: css
 js: js
 images: images
-
-# Waline
-# For more information: https://waline.js.org, https://github.com/walinejs/waline
-waline:
-  enable: true #是否开启
-  serverURL: waline.xdxmblog.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
-  search: false
-  libUrl: https://www.xdxmblog.cn/waline/waline.js
-  cssUrl: https://www.xdxmblog.cn/waline/waline.css
-  locale:
-    placeholder: 这里是小呆&小萌的情侣博客，欢迎评论与我们互动 #评论框的默认文字
-  commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
-  meta: # 自定义评论框上面的三个输入框的内容
-    - nick
-    - mail
-    - link
-  requiredMeta:
-    - nick
-  lang: zh-CN # 语言, 可选值: en, zh-cn
-  pageSize: 10 # 评论数量多少时显示分页
-  emoji: false
-  imageUploader: false # 图片上传
-  pageview: true # 文章阅读统计
-  copyright: false

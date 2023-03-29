@@ -1,0 +1,9 @@
+{{ next_data('waline', {
+  lang: page.lang | default('zh-CN', true)
+}, theme.waline, {
+  el: '#waline',
+  comment: true,
+  libUrl: theme.waline.libUrl | default('//unpkg.com/@waline/client@v2/dist/waline.js', true),
+  path: url_for(page.path) | replace(r/\/index\.html$/, '/')
+}) }}
+{{ next_js('third-party/comments/waline.js') }}
