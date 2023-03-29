@@ -922,4 +922,3 @@ waline:
   emoji: false
   imageUploader: false # 图片上传
   pageview: false # 文章阅读统计
-  reaction: true
