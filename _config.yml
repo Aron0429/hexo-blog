@@ -102,9 +102,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@github_xd:Chinalink/hxd.github.io.git
-  branch: master
+  - type: baidu_url_submitter # 这一行是新增的配置
 
 # Extensions
 Plugins:
@@ -113,6 +111,7 @@ Plugins:
   - hexo-generator-baidu-sitemap
   - hexo-symbols-count-time
   - hexo-generator-searchdb
+  - hexo-baidu-url-submit
 # Feed Atom
 feed:
   type: atom
@@ -141,3 +140,10 @@ search:
   field: post
   format: html
   limit: 10000
+
+#设置百度主动推送
+baidu_url_submit:
+  count: 200 #比如200，代表提交最新的200个链接
+  host: xdxmblog.cn # 在百度站长平台中注册的域名，这个改为你自己的域名
+  token: 6iBtZ4EGSLKcd4Tn # 请注意这是您的秘钥（百度站长密钥）
+  path: baidu_urls.txt # 新链接会保存在此文本文档里（文本文件的文件名）
