@@ -904,17 +904,21 @@ images: images
 # For more information: https://waline.js.org, https://github.com/walinejs/waline
 waline:
   enable: true #是否开启
-  search: false
   serverURL: waline.xdxmblog.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
-  placeholder: 请文明评论呀 # #评论框的默认文字
-  avatar: mm # 头像风格
-  meta: [nick, mail, link] # 自定义评论框上面的三个输入框的内容
+  search: false
+  libUrl: http://img.xdxmblog.cn/waline/waline.js
+  cssUrl: http://img.xdxmblog.cn/waline/waline.css
+  locale:
+    placeholder: 这里是小呆&小萌的情侣博客，欢迎评论与我们互动 #评论框的默认文字
+  commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
+  meta: # 自定义评论框上面的三个输入框的内容
+    - nick
+    - mail
+    - link
+  requiredMeta:
+    - nick
+  lang: zh-CN # 语言, 可选值: en, zh-cn
   pageSize: 10 # 评论数量多少时显示分页
-  lang: zh-cn # 语言, 可选值: en, zh-cn
-  # Warning: 不要同时启用 `waline.visitor` 以及 `leancloud_visitors`.
-  visitor: false # 文章阅读统计
-  comment_count: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
-  image_uploader: false # 图片上传
+  uploadImage: false # 图片上传
+  pageview: false # 文章阅读统计
   reaction: true
-  requiredFields: [nick, mail] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]
-  libUrl: # Set custom library cdn url
