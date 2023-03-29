@@ -47,22 +47,6 @@ hexo.extend.filter.register("theme_inject", (injects) => {
   const config = hexo.theme.config.waline;
   if (!config.enable || !config.serverURL) return;
 
-  injects.postMeta.raw(
-    "waline_comments",
-    `
-  {% if post.comments and (is_post() or config.waline.commentCount) %}
-  <span class="post-meta-item">
-    ${iconText("far fa-comment", "评论数")}
-    <a title="评论数" href="{{ url_for(post.path) }}#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="{{ url_for(post.path) }}" itemprop="commentCount"></span>
-    </a>
-  </span>
-  {% endif %}
-  `,
-    {},
-    {}
-  );
-
   if (config.pageview) {
     // ensure to turn of valine visitor
     if (
@@ -90,4 +74,20 @@ hexo.extend.filter.register("theme_inject", (injects) => {
       {}
     );
   }
+
+  injects.postMeta.raw(
+    "waline_comments",
+    `
+  {% if post.comments and (is_post() or config.waline.commentCount) %}
+  <span class="post-meta-item">
+    ${iconText("far fa-comment", "评论数")}
+    <a href="{{ url_for(post.path) }}#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="{{ url_for(post.path) }}" itemprop="commentCount"></span>
+    </a>
+  </span>
+  {% endif %}
+  `,
+    {},
+    {}
+  );
 });
