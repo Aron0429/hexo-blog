@@ -1,11 +1,12 @@
 ---
 title: Instanceof与原型链
 author: 小呆
+abbrlink: 2
 tags:
   - 前端面试
 categories: JavaScript
-abbrlink: 2
 date: 2023-03-26 23:34:19 
+update: 2023-03-26 23:34:19
 ---
 
 原型和原型链，是JavaScript中的一个重要知识点，也是面试中的高频考点，理解并掌握原型和原型链，对于前端开发者来说是重中之重。下面就通过Instanceof运算符来复习一下相关知识吧。
