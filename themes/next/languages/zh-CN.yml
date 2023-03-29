@@ -11,6 +11,7 @@ menu:
   categories: 分类
   tags: 标签
   about: 关于
+  message: 留言板
   search: 搜索
   schedule: 日程表
   sitemap: 站点地图
@@ -24,6 +25,7 @@ post:
   edited: 更新于
   created: 创建时间
   modified: 修改时间
+  author: 作者
   edit: 编辑
   in: 分类于
   read_more: 阅读全文
