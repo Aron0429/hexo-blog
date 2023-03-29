@@ -12,6 +12,7 @@
     "version": "6.3.0"
   },
   "dependencies": {
+    "@waline/hexo-next": "^3.0.1",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-baidu-url-submit": "^0.0.6",
