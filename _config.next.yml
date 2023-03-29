@@ -919,6 +919,7 @@ waline:
     - nick
   lang: zh-CN # 语言, 可选值: en, zh-cn
   pageSize: 10 # 评论数量多少时显示分页
-  uploadImage: false # 图片上传
+  emoji: false
+  imageUploader: false # 图片上传
   pageview: false # 文章阅读统计
   reaction: true
