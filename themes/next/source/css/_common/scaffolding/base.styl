@@ -79,11 +79,28 @@ hr {
   margin: 40px 0;
 }
 
+// new system style
 blockquote {
-  border-left: 4px solid $grey-lighter;
+  display: inline-block;
+  margin: 15px 0;
+  border-radius: 2px;
+  border-left: none;
   color: var(--blockquote-color);
-  margin: 0;
-  padding: 0 15px;
+  background-color: #fdefee;
+  position relative;
+  padding: 10px 16px;
+
+  ::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 4px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #e95f59;
+    border-radius: 2px;
+  }
 
   cite::before {
     content: '-';
@@ -93,6 +110,10 @@ blockquote {
   p {
     margin: 0;
   }
+}
+
+blockquote + h4 {
+  margin-top: 15px;
 }
 
 dt {

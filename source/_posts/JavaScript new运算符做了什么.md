@@ -46,7 +46,7 @@ var moonCake5 = { id: 5, fill: 'hetao', type: 'rabbit', info: function() { conso
 > 3. 改变this的指向，将this指向这个创建出来的对象；
 > 4. 如果该函数没有返回对象，则返回this；
 
-通过隐式原型，我们就可以很方便的调用构造函数原型对象上的属性和方法。如果对原型链不太了解的可以看[Instanceof与原型链](https://www.xdxmblog.cn/posts/2.html)这篇文章。通过改变this的指向，当我们向函数中再传递实参时，参数就会被挂载到实例对象上去。
+通过隐式原型，我们就可以很方便的调用构造函数原型对象上的属性和方法。如果对原型链不太了解的可以看**[Instanceof与原型链](https://www.xdxmblog.cn/posts/2.html)**这篇文章。通过改变this的指向，当我们向函数中再传递实参时，参数就会被挂载到实例对象上去。
 
 ```javascript
 function MoonCakeModel(id, fill) {
