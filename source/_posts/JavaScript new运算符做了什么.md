@@ -46,7 +46,7 @@ var moonCake5 = { id: 5, fill: 'hetao', type: 'rabbit', info: function() { conso
 > 3. 改变this的指向，将this指向这个创建出来的对象；
 > 4. 如果该函数没有返回对象，则返回this；
 
-通过隐式原型，我们就可以很方便的调用构造函数原型对象上的属性和方法。如果对原型链不太了解的可以看**[Instanceof与原型链](https://www.xdxmblog.cn/posts/2.html)**这篇文章。通过改变this的指向，当我们向函数中再传递实参时，参数就会被挂载到实例对象上去。
+通过隐式原型，我们就可以很方便的调用构造函数原型对象上的属性和方法。如果对原型链不太了解的可以看[**Instanceof与原型链**](https://www.xdxmblog.cn/posts/2.html)这篇文章。通过改变this的指向，当我们向函数中再传递实参时，参数就会被挂载到实例对象上去。
 
 ```javascript
 function MoonCakeModel(id, fill) {
@@ -100,7 +100,7 @@ console.log(moonCake instanceof MoonCakeModel) // true
 console.log(moonCake2 instanceof MoonCakeModel) // true
 ```
 
-在实现myNew的过程中，有一个typeof的判断，对apply函数不太了解的同学可能会有点懵，apply在劫持this的时候，会立即执行这个被劫持的方法（函数），在上面的例子当中是MoonCakeModel。所以如果构造函数中显示的return了一个对象，就需要返回该对象。构造函数的返回规则遵循以下几点：
+在实现myNew的过程中，有一个typeof的判断，对apply函数不太了解的同学可能会有点懵，apply在劫持this的时候，会立即执行这个被劫持的方法（函数），在上面的例子当中是MoonCakeModel。所以如果构造函数中显示的return了一个对象，就需要返回该对象。**构造函数的返回规则遵循以下几点：**
 
 1. 在构造函数中，如果不写return的话默认就是返回创建的实例对象；
 2. 如果return的是一个基本数据类型的话比如：boolean, number,undefined等那么仍然返回实例对象
