@@ -46,7 +46,7 @@ var moonCake5 = { id: 5, fill: 'hetao', type: 'rabbit', info: function() { conso
 > 3. 改变this的指向，将this指向这个创建出来的对象；
 > 4. 如果该函数没有返回对象，则返回this；
 
-通过隐式原型，我们就可以很方便的调用构造函数原型对象上的属性和方法。如果对原型链不太了解的可以看[**Instanceof与原型链**](https://www.xdxmblog.cn/posts/2.html)这篇文章。通过改变this的指向，当我们向函数中再传递实参时，参数就会被挂载到实例对象上去。
+通过隐式原型，我们就可以很方便的调用构造函数原型对象上的属性和方法。如果对原型链不太了解的可以看[《Instanceof与原型链》](https://www.xdxmblog.cn/posts/2.html)这篇文章。通过改变this的指向，当我们向函数中再传递实参时，参数就会被挂载到实例对象上去。
 
 ```javascript
 function MoonCakeModel(id, fill) {
@@ -123,6 +123,10 @@ console.log(moonCake);
 我们可以通过控制台打印发现：moonCake的属性值并不是我们传入myNew的参数，而是构造函数return的那个对象。并且moonCake与MoonCakeModel之前也没有了原型链的关系。
 
 ![构造函数显示返回对象](http://img.xdxmblog.cn/images/image-20230330031659769.png)
+
+##### Object.create(null)和{}
+
+我们都知道创建对象有很多种方式，但是在实现new的过程中，我们却使用了Object.create(null)。这是为什么呢？答案是：**使用Object.create(null)，只是单纯的空对象，它没有原型链，更干净纯粹。而{}的创建过程，会带有原型链。**
 
 #### 小结
 
