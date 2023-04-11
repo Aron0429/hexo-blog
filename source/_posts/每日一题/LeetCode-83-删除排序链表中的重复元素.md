@@ -20,7 +20,7 @@ updated: 2023-04-11 13:00:15
 
 示例：
 
-![删除排序链表中的重复元素](http://img.xdxmblog.cn/images/image-20230411130211651.png)
+![删除排序链表中的重复元素](//img.xdxmblog.cn/images/image-20230411130211651.png)
 
 ```
 输入：head = [1,1,2,3,3]
@@ -39,7 +39,7 @@ updated: 2023-04-11 13:00:15
 
 依旧用一张git图来帮助理解代码在循环过程中，及最后的`slow.next = null`的作用。
 
-![删除排序链表中的重复元素](http://img.xdxmblog.cn/images/image-202304110001.gif)
+![删除排序链表中的重复元素](//img.xdxmblog.cn/images/image-202304110001.gif)
 
 ```javascript
 /**
