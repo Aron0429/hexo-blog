@@ -53,7 +53,7 @@ nums 已按 升序 排列
 
 为了方便理解，小呆制作了一个gif图，展示了每一次循环过程中两个指针的移动过程和值修改的过程。对比下列代码更容易理解。
 
-![快慢指针](http://img.xdxmblog.cn/images/image-202304100001.gif)
+![快慢指针](//img.xdxmblog.cn/images/image-202304100001.gif)
 
 ```javascript
 /**
@@ -85,3 +85,4 @@ var removeDuplicates = function(nums) {
 [力扣LeetCode的第26题-删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array)
 
 [双指针技巧秒杀七道数组题目——作者：labuladong](https://labuladong.gitee.io/algo/di-yi-zhan-da78c/shou-ba-sh-48c1d/shuang-zhi-fa4bd/)
+

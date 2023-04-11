@@ -35,7 +35,7 @@ var foo = new Foo
 console.log(foo.__proto__ === Foo.prototype) // true
 ```
 
-![原型对象、构造函数、实例的关系](http://img.xdxmblog.cn/images/image_20230328094744.png)
+![原型对象、构造函数、实例的关系](//img.xdxmblog.cn/images/image_20230328094744.png)
 
 通过代码和图像，我们对原型对象、构造函数、实例之间的关系有了更深一步的了解。我们都知道，函数其实也是对象的一种，那函数是谁创建的呢？函数也有`__proto__`吗？答案是：函数是由**Function**来创建的，函数也有`__proto__`。我们来验证一下：
 
@@ -48,11 +48,11 @@ var obj = {} // 同样也是语法糖，重点在理解与原型的关系
 console.log(obj.__proto__ === Object.prototype) // true
 ```
 
-![构造函数与Function的关系](http://img.xdxmblog.cn/images/image_20230328100557.png)
+![构造函数与Function的关系](//img.xdxmblog.cn/images/image_20230328100557.png)
 
 而Function和Object是函数，所以他们也是对象。那Function的隐式原型`__proto__`指向谁呢？我们通过控制台打印来观察一下：
 
-![Function与Function.__proto__](http://img.xdxmblog.cn/images/image_20230328160252.png)
+![Function与Function.__proto__](//img.xdxmblog.cn/images/image_20230328160252.png)
 
 我们惊奇的发现，`Function.__proto__`与`Function.prototype`一抹一样，所以我创造了我自己？
 
@@ -99,7 +99,7 @@ console.log(Object.prototype.__proto__ === null) // true
 
 看完上面头还是晕晕的？来一张图给你标明它们之间的关系：
 
-![原型之间的关系](http://img.xdxmblog.cn/images/image_20230328172513.png)
+![原型之间的关系](//img.xdxmblog.cn/images/image_20230328172513.png)
 
 ##### 原型链是如何工作的
 
@@ -118,7 +118,7 @@ foo.age.toString() // '18'
 
 我们先是在Foo函数的原型对象上添加了一个name属性，然后通过new Foo生成foo对象，这时我们打印foo.name，我们明明没有给foo定义name属性，但是却能得到值XiaoDai。接着我们给foo定义name属性，再次打印，值变成了XiaoMeng。这是为什么呢？我们打印foo来观察：
 
-![原型链](http://img.xdxmblog.cn/images/image_20230328180150.png)
+![原型链](//img.xdxmblog.cn/images/image_20230328180150.png)
 
 我们发现，在foo对象上，有一个name属性，在foo的隐式原型上，也有一个name属性，当我们调用name属性时，会先从自身查找，如果自身有，直接返回查到的值。如果没有，就顺着`__proto__`去隐式原型上查，如果隐式原型上也没有（比如上面代码调用的toString方法，foo的隐式原型上并没有），就会顺着隐式原型的隐式原型上去查，直到查到`Object.prototype`，因为再往上查是null，就停止了。如下图：
 
