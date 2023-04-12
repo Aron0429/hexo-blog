@@ -52,6 +52,9 @@ updated: 2023-04-12 09:35:37
  * @return {number}
  */
 var removeElement = function(nums, val) {
+    if(nums.length == 0) {  // 依旧先判断边界值
+        return 0
+    }
     let fast = 0, slow = 0
     while(fast < nums.length) {
         if(nums[fast] !== val) {
