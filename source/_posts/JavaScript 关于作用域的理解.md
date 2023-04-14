@@ -1,6 +1,7 @@
 ---
 title: JavaScript 关于作用域的理解
 author: 小呆
+abbrlink: 27872
 date: 2023-04-14 02:27:57
 updated: 2023-04-14 02:27:57
 tags:

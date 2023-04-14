@@ -1,6 +1,7 @@
 ---
 title: LeetCode(1)两数之和
 author: 小呆
+abbrlink: 35485
 date: 2023-04-14 23:21:51
 updated: 2023-04-14 23:21:51
 tags:
