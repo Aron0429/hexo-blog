@@ -49,7 +49,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -109,7 +109,6 @@ Plugins:
   - hexo-generator-feed
   - hexo-generator-sitemap
   - hexo-generator-baidu-sitemap
-  - hexo-symbols-count-time
   - hexo-generator-searchdb
   - hexo-baidu-url-submit
 # Feed Atom
@@ -123,17 +122,6 @@ sitemap:
 # Baidu siteMap
 baidusitemap:
   path: baidusitemap.xml
-# 设置博客单词统计
-symbols_count_time:
-  # 文章字数统计
-  symbols: true
-  # 文章阅读时间统计
-  time: true
-  # 站点总字数统计
-  total_symbols: false
-  # 站点总阅读时间统计
-  total_time: false
-  exclude_codeblock: false
 #本地搜索
 search:
   path: search.xml
