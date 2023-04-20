@@ -2,6 +2,7 @@
 title: Instanceof与原型链
 author: 小呆
 abbrlink: 2
+cover: https://cover.xdxmblog.cn/cover/cover_2.webp
 tags:
   - 前端面试
 categories: JavaScript

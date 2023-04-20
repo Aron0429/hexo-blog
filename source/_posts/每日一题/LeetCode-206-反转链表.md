@@ -6,6 +6,7 @@ tags:
   - 双指针算法
 categories: 每日一题
 abbrlink: 27687
+cover: https://cover.xdxmblog.cn/cover/cover_27687.webp
 date: 2023-04-15 16:05:05
 updated: 2023-04-15 16:05:05
 ---

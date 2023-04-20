@@ -2,6 +2,7 @@
 title: JavaScript 关于闭包的理解
 author: 小呆
 abbrlink: 48878
+cover: https://cover.xdxmblog.cn/cover/cover_48878.webp
 date: 2023-04-15 02:35:46
 updated: 2023-04-15 02:35:46
 tags:

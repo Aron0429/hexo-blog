@@ -2,6 +2,7 @@
 title: JavaScript this到底指向谁
 author: 小呆
 abbrlink: 45186
+cover: https://cover.xdxmblog.cn/cover/cover_45186.webp
 tags:
   - 前端面试
 categories: JavaScript

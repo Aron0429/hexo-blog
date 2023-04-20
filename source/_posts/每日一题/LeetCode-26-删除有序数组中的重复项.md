@@ -2,6 +2,7 @@
 title: LeetCode(26)删除有序数组中的重复项
 author: 小呆
 abbrlink: 1148
+cover: https://cover.xdxmblog.cn/cover/cover_1148.webp
 date: 2023-04-10 14:16:41
 updated: 2023-04-10 14:16:41
 tags:

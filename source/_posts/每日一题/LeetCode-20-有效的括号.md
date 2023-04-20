@@ -2,6 +2,7 @@
 title: LeetCode(20)有效的括号
 author: 小呆
 abbrlink: 14676
+cover: https://cover.xdxmblog.cn/cover/cover_14676.webp
 date: 2023-04-18 11:37:29
 updated: 2023-04-18 11:37:29
 tags:

@@ -2,6 +2,7 @@
 title: JavaScript new运算符做了什么
 author: 小呆
 abbrlink: 19802
+cover: https://cover.xdxmblog.cn/cover/cover_19802.webp
 tags:
   - 前端面试
 categories: JavaScript

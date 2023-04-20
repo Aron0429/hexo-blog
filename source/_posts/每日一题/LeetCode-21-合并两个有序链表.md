@@ -2,6 +2,7 @@
 title: LeetCode(21)合并两个有序链表
 author: 小呆
 abbrlink: 39311
+cover: https://cover.xdxmblog.cn/cover/cover_39311.webp
 date: 2023-04-16 16:28:05
 updated: 2023-04-16 16:28:05
 tags:

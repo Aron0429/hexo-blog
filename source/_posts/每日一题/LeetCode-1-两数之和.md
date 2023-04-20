@@ -2,6 +2,7 @@
 title: LeetCode(1)两数之和
 author: 小呆
 abbrlink: 35485
+cover: https://cover.xdxmblog.cn/cover/cover_35485.webp
 date: 2023-04-14 23:21:51
 updated: 2023-04-14 23:21:51
 tags:
