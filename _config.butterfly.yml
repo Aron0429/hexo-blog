@@ -460,6 +460,7 @@ valine:
 waline:
   serverURL: waline.xdxmblog.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
   bg: /img/comment_bg.png
+  pageview: true # 文章阅读统计
   option:
     commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
     pageview: true # 文章阅读统计
