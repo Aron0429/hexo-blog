@@ -11,7 +11,7 @@ updated: 2023-03-26 23:34:19
 
 原型和原型链，是JavaScript中的一个重要知识点，也是面试中的高频考点，理解并掌握原型和原型链，对于前端开发者来说是重中之重。下面就通过Instanceof运算符来复习一下相关知识吧。
 
-#### 知识点
+## 知识点
 
 - 理解JavaScript对象原型
 - 原型链如何工作
@@ -19,7 +19,7 @@ updated: 2023-03-26 23:34:19
 
 <!--more-->
 
-##### 理解JavaScript对象原型与原型链
+### 理解JavaScript对象原型与原型链
 
 > JavaScript常被描述为一种**基于原型的语言**——每个对象拥有一个原型对象，对象以其原型为模板、从原型继承方法和属性。原型对象也可能拥有原型，并从中继承方法和属性，一层一层、以此类推。这种关系常被称为**原型链**。
 
@@ -101,7 +101,7 @@ console.log(Object.prototype.__proto__ === null) // true
 
 ![原型之间的关系](//img.xdxmblog.cn/images/image_20230328172513.png)
 
-##### 原型链是如何工作的
+### 原型链是如何工作的
 
 通过上面的学习，我们已经掌握了什么是原型，而像上图这样把原型和对象一层一层链接起来，就叫做原型链。那它是如何工作的呢？我们还是通过代码来理解：
 
@@ -128,7 +128,7 @@ foo.toString() => foo.__proto__（Foo.prototype） => foo.__proto__.__proto__(Ob
 
 需要注意的一点是：**原型链上的属性和方法并没有被复制到实例对象上**，通过上图也能观察到有2个name属性。
 
-##### constructor属性
+### constructor属性
 
 实际上，每个原型对象都有一个constructor属性，这个属性是在生成prototype时自动生成的，它指向构造函数本身。这里我们了解就好，所以上面的原型链图里没有标明，不然脑子会很乱。感兴趣的同学可以看着图写一下。
 
@@ -136,7 +136,7 @@ foo.toString() => foo.__proto__（Foo.prototype） => foo.__proto__.__proto__(Ob
 console.log(Foo.prototype.constructor === Foo) // true
 ```
 
-##### instanceof运算符的作用与实现
+### instanceof运算符的作用与实现
 
 理解了原型与原型链，我们要如何判断一个构造函数的prototype属性是否出现在某个实例对象的原型链上呢？答案是instanceof运算符
 
@@ -186,6 +186,6 @@ console.log(myInstanceof(cat, dog)) // Uncaught TypeError: [object Object] is no
 | typeof     | 检测基本类型的值：string、boolean、number、null、undefined,以及引用类型中的function是精准的 | 对于object,array,null来说，都会返回object，无法精准区分 |
 | instanceof | 判断一个构造函数的prototype属性是否出现在某个实例对象的原型链上，从原型的角度上可以判断某引用属于哪个构造函数，从而判定它的数据类型 |                                                         |
 
-#### 小结
+## 小结
 
 通过这篇文章，我们理解了什么是原型和原型链，以及原型链的工作原理。其次，我们学习到了instanceof运算符的作用以及如何实现，并与typeof做了对比，希望这篇文章能够帮助大家快速掌握相关知识。
