@@ -3,7 +3,7 @@
 # --------------------------------------
 
 nav:
-  logo: # image
+  logo: /img/logo.png
   display_title: true
   fixed: false # fixed navigation bar
 
@@ -42,7 +42,7 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 # Avatar (頭像)
 avatar:
@@ -460,10 +460,7 @@ valine:
 waline:
   serverURL: waline.xdxmblog.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
   bg: /img/comment_bg.png
-  pageview: true
   option:
-    libUrl: https://www.xdxmblog.cn/js/waline/waline.js
-    cssUrl: https://www.xdxmblog.cn/js/waline/waline.css
     commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
     pageview: true # 文章阅读统计
     locale:
@@ -482,6 +479,7 @@ waline:
       - link
     requiredMeta:
       - nick
+      - mail
     lang: zh-CN # 语言, 可选值: en, zh-cn
     pageSize: 10 # 评论数量多少时显示分页
     imageUploader: false # 图片上传
@@ -942,14 +940,14 @@ CDN:
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: custom
 
   # Add version number to url, true or false
   version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
     # main_css:
