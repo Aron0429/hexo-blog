@@ -28,7 +28,7 @@ categories: 每日一题
 
 提示：
 
-- `1 <= nums.length <= 105`
+- `1 <= nums.length <= 10^5`
 - `nums[i]`不是`0`就是`1`.
 
 ## 解题思路

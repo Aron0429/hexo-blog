@@ -31,7 +31,7 @@ updated: 2023-04-17 23:16:41
 
 提示：
 
-- `1 <= s.length <= 105`
+- `1 <= s.length <= 10^5`
 - `s[i]`都是[ASCII](https://baike.baidu.com/item/ASCII)码表中的可打印字符
 
 ## 解题思路
