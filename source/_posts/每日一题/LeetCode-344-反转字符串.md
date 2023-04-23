@@ -2,7 +2,6 @@
 title: LeetCode(344)反转字符串
 author: 小呆
 tags:
-  - 算法
   - 双指针算法
 categories: 每日一题
 abbrlink: 26802

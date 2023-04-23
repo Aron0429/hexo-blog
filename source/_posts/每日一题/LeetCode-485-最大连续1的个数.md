@@ -6,7 +6,7 @@ cover: https://cover.xdxmblog.cn/cover/cover_16414.webp
 date: 2023-04-21 11:07:38
 updated: 2023-04-21 11:07:38
 tags:
- - 算法
+ - 数学运算
 categories: 每日一题
 ---
 

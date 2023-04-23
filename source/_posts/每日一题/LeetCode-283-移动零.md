@@ -2,7 +2,6 @@
 title: LeetCode(283)移动零
 author: 小呆
 tags:
-  - 算法
   - 双指针算法
 categories: 每日一题
 abbrlink: 46328
