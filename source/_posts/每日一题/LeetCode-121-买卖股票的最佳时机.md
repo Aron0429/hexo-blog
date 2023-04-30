@@ -8,7 +8,7 @@ updated: 2023-04-23 00:04:43
 keywords:
 tags:
  - 贪心算法
- - 动图规划
+ - 动态规划
 categories: 每日一题
 ---
 
