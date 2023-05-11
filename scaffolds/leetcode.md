@@ -4,7 +4,7 @@ author: 小呆
 cover: https://cover.xdxmblog.cn/cover/cover_xxxx.webp
 keywords:
 tags:
-categories:
+categories: 每日一题
 date: {{ date }}
 updated: {{ date }}
 ---
