@@ -7,7 +7,9 @@ date: 2023-04-27 11:33:12
 updated: 2023-04-27 11:33:12
 keywords:
 tags:
-categories:
+ - 哈希表
+ - 排序算法
+categories: 每日一题
 ---
 今天是小呆刷题的第18天，今天的题目是：剑指Offer的第3题，数组中重复的数字
 
