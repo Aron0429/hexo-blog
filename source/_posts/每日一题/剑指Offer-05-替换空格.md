@@ -128,4 +128,4 @@ var replaceSpace = function(s) {
 
 《剑指Offer 第2版》——作者：何海涛
 
-[剑指Offer的第4题-替换空格](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
+[剑指Offer的第5题-替换空格](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
