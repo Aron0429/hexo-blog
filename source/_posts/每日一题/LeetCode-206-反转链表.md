@@ -70,6 +70,10 @@ var reverseList = function(head) {
 }
 ```
 
+## 小结
+
+其实可以发现，只要巧妙的利用已经学会的算法，稍加变通，就可以解出问题。加油加油加油！
+
 ## 引用
 
 [力扣LeetCode的第206题-反转链表](https://leetcode.cn/problems/reverse-linked-list/submissions/)

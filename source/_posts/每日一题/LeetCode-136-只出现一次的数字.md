@@ -5,20 +5,18 @@ cover: 'https://cover.xdxmblog.cn/cover/cover_58546.webp'
 abbrlink: 58546
 date: 2023-04-22 23:35:14
 updated: 2023-04-22 23:35:14
-keywords:
 tags:
- - 位运算
+  - 位运算
 categories: 每日一题
 ---
 
-今天是小呆刷题的第13天，今天的题目是：力扣（LeetCode)的第136题，只出现一次的数字
+今天是小呆刷题的第 13 天，今天的题目是：力扣（LeetCode)的第 136 题，只出现一次的数字
 
 ## 题目要求
 
 > 给你一个**非空**整数数组`nums`，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
 >
 > 你必须设计并实现线性时间复杂度的算法来解决此问题，且该算法只使用常量额外空间。
->
 
 <!--more-->
 
@@ -47,17 +45,17 @@ categories: 每日一题
  * @param {number[]} nums
  * @return {number}
  */
-var singleNumber = function(nums) {
-	let hasSet = new Set()
-  for(let i = 0; i < nums.length; i++) {
-    if(hasSet.has(nums[i])) {
+var singleNumber = function (nums) {
+  let hasSet = new Set()
+  for (let i = 0; i < nums.length; i++) {
+    if (hasSet.has(nums[i])) {
       hasSet.delete(nums[i])
     } else {
       hasSet.add(nums[i])
     }
   }
   return [...hasMap][0]
-};
+}
 ```
 
 但是上面这种解法的空间复杂度为`O(n)`，而题目要求的空间复杂度为`O(1)`，所以不合符题意。然后小呆没有其他思路了，去看了题解的思路：
@@ -71,11 +69,11 @@ var singleNumber = function(nums) {
 
 ### 异或运算`XOR`
 
-异或运算`XOR`属于位运算符，也就是在操作的过程中，会将十进制的数字转换成二进制，然后按照二进制的位来操作数值。小呆对于位运算也不是很熟悉，所以拿出《JavaScript高级程序设计第3版》一起学习一下吧。位运算符位于书中第三章3.5节。
+异或运算`XOR`属于位运算符，也就是在操作的过程中，会将十进制的数字转换成二进制，然后按照二进制的位来操作数值。小呆对于位运算也不是很熟悉，所以拿出《JavaScript 高级程序设计第 3 版》一起学习一下吧。位运算符位于书中第三章 3.5 节。
 
 > 按位异或操作符由一个插入符合`^`表示，也有两个操作数。
 
-按位异或操作在**两个数值对应位上只有一个1时才返回1，如果对应的两位都是1或都是0，则返回0**。举个例子：十进制`10`，用二进制表示为`1010`（取4位），十进制`0`，用二进制表示为`0000`(取4位)。我们用表格来展示`10 ^ 0 = 10`，这就让我们明白了上面的思路1：`n ^ 0 = n`
+按位异或操作在**两个数值对应位上只有一个 1 时才返回 1，如果对应的两位都是 1 或都是 0，则返回 0**。举个例子：十进制`10`，用二进制表示为`1010`（取 4 位），十进制`0`，用二进制表示为`0000`(取 4 位)。我们用表格来展示`10 ^ 0 = 10`，这就让我们明白了上面的思路 1：`n ^ 0 = n`
 
 | 第一个数值的位 | 第二个数值的位 | 结果 |
 | -------------- | -------------- | ---- |
@@ -84,7 +82,7 @@ var singleNumber = function(nums) {
 | 0              | 1              | 1    |
 | 0              | 0              | 0    |
 
-再看另一个例子：`10 ^ 10 = 0`，这就让我们明白了上面的思路2: `n ^ n = 0`
+再看另一个例子：`10 ^ 10 = 0`，这就让我们明白了上面的思路 2: `n ^ n = 0`
 
 | 第一个数值的位 | 第二个数值的位 | 结果 |
 | -------------- | -------------- | ---- |
@@ -93,7 +91,7 @@ var singleNumber = function(nums) {
 | 1              | 1              | 0    |
 | 0              | 0              | 0    |
 
-老规矩，用一张动图来辅助理解思路3：
+老规矩，用一张动图来辅助理解思路 3：
 
 ![按位异或操作符](//img.xdxmblog.cn/images/image-202304220001.gif)
 
@@ -102,13 +100,13 @@ var singleNumber = function(nums) {
  * @param {number[]} nums
  * @return {number}
  */
-var singleNumber = function(nums) {
-    let ans = 0
-    for(let num of nums) {
-        ans ^= num
-    }
-    return ans
-};
+var singleNumber = function (nums) {
+  let ans = 0
+  for (let num of nums) {
+    ans ^= num
+  }
+  return ans
+}
 ```
 
 ## 小结
@@ -117,4 +115,4 @@ var singleNumber = function(nums) {
 
 ## 引用
 
-[力扣LeetCode的第136题-只出现一次的数字](https://leetcode.cn/problems/single-number)
+[力扣 LeetCode 的第 136 题-只出现一次的数字](https://leetcode.cn/problems/single-number)

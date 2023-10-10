@@ -5,14 +5,13 @@ cover: 'https://cover.xdxmblog.cn/cover/cover_37133.webp'
 abbrlink: 37133
 date: 2023-04-23 00:04:43
 updated: 2023-04-23 00:04:43
-keywords:
 tags:
- - 贪心算法
- - 动态规划
+  - 贪心算法
+  - 动态规划
 categories: 每日一题
 ---
 
-今天是小呆刷题的第14天，今天的题目是：力扣（LeetCode)的第121题，买卖股票的最佳时机
+今天是小呆刷题的第 14 天，今天的题目是：力扣（LeetCode)的第 121 题，买卖股票的最佳时机
 
 ## 题目要求
 
@@ -21,7 +20,6 @@ categories: 每日一题
 > 你只能选择`某一天`买入这只股票，并选择在**未来的某一个不同的日子**卖出该股票。设计一个算法来计算你所能获取的最大利润。
 >
 > 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回`0`。
->
 
 <!--more-->
 
@@ -45,23 +43,23 @@ categories: 每日一题
 
 ## 解题思路
 
-这道题首先我们要明确一个股票买卖的规则就是：**当天买入，第二天及以后才能卖出**。上面的示例来理解，第3天的股价为5元（`prices[2] = 5`），那也就是说，我一定是在第1天或者第2天（`[price[0] - price[i(2) - 1]]`）的范围里买入的股票，才能在第3天卖出。小呆首先能想到的肯定是暴力解法，套2层循环，去计算区间`j`和`i`的差，然后返回最大值即可。但是这种方式的性能也比较差，时间复杂度达到了`O(n^2)`，超出了时间限制。
+这道题首先我们要明确一个股票买卖的规则就是：**当天买入，第二天及以后才能卖出**。上面的示例来理解，第 3 天的股价为 5 元（`prices[2] = 5`），那也就是说，我一定是在第 1 天或者第 2 天（`[price[0] - price[i(2) - 1]]`）的范围里买入的股票，才能在第 3 天卖出。小呆首先能想到的肯定是暴力解法，套 2 层循环，去计算区间`j`和`i`的差，然后返回最大值即可。但是这种方式的性能也比较差，时间复杂度达到了`O(n^2)`，超出了时间限制。
 
 ```javascript
 /**
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
-    if(prices.length <= 1) return 0
-    let maxProfit = 0
-    for(let i = 0; i < prices.length - 1; i++) {
-        for(let j = i + 1; j < prices.length; j++) {
-            maxProfit = Math.max(maxProfit, prices[j] - prices[i])
-        }
+var maxProfit = function (prices) {
+  if (prices.length <= 1) return 0
+  let maxProfit = 0
+  for (let i = 0; i < prices.length - 1; i++) {
+    for (let j = i + 1; j < prices.length; j++) {
+      maxProfit = Math.max(maxProfit, prices[j] - prices[i])
     }
-    return maxProfit
-};
+  }
+  return maxProfit
+}
 ```
 
 暴力解法肯定不是我们想要的，因为性能比较差，例如这道题直接就超时了，所以我们要想想其他的思路。通过观察示例，其实我们想要得到的就是一个**区间范围内的最大值和最小值**。也就是`[0, prices[i]]（i >= 1）`区间范围内的最大值和最小值。所以还可以利用贪心算法来求解。老规矩用动图来辅助理解：
@@ -73,15 +71,16 @@ var maxProfit = function(prices) {
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
-  if(prices.length <= 1) return 0
-  let maxProfit = 0, minProfit = prices[0]
-  for(let i = 1; i < prices.length; i++) {
+var maxProfit = function (prices) {
+  if (prices.length <= 1) return 0
+  let maxProfit = 0,
+    minProfit = prices[0]
+  for (let i = 1; i < prices.length; i++) {
     maxProfit = Math.max(maxProfit, prices[i] - minProfit)
     minProfit = Math.min(minProfit, prices[i])
   }
   return maxProfit
-};
+}
 ```
 
 除了上面的两种解法。小呆没有想到其他思路，习惯性的点开题解看了看，发现这道题还可以用动态规划的思路去做，小呆也是反复看了好几遍，才理解了动态规划的思路。这道题的要求是最大利润，其实可以理解为**我们从开始到结束，手里能够持有的最大现金数**。那我们每天的状态可以分为两种：
@@ -122,7 +121,7 @@ var maxProfit = function(prices) {
 1. 买入股票（借钱买），持有它，于是`dp[0][i] = -prices[0]`，也就是我们手里的现金是负数。
 2. 不操作，不持有股票，于是`dp[0][1] = 0`。
 
-然后我们确定遍历顺序，由于`dp[i]`是有`dp[i - 1]`推导出来的，所以是从前向后，遍历的下标也就一定是从1开始。
+然后我们确定遍历顺序，由于`dp[i]`是有`dp[i - 1]`推导出来的，所以是从前向后，遍历的下标也就一定是从 1 开始。
 
 老规矩，配张动图辅助理解：
 
@@ -133,33 +132,34 @@ var maxProfit = function(prices) {
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
+var maxProfit = function (prices) {
   let dp = new Array(prices.length)
-  for(let i = 0; i < dp.length; i++) {
+  for (let i = 0; i < dp.length; i++) {
     dp[i] = new Array()
   }
   // 上面创建二维数组的方式也可以用fill，只不过用fill填充的是同一个数组的引用，每次操作都会改变所有dp[i]
   // 单从做题来看，使用fill执行速度更快，内存占用更小。
   // 但是如果从理解动态规划来看，还是使用for为每一个dp[i]创建一个数组，更容易观察递推公式的每一步流程
   // let dp = new Array(prices.length).fill(new Array())
-  
+
   dp[0][0] = -prices[0]
   dp[0][1] = 0
-  
-  for(let i = 1; i < prices.length; i++) {
+
+  for (let i = 1; i < prices.length; i++) {
     dp[i][0] = Math.max(dp[i - 1][0], -prices[i]) // 前一天手里有股票的现金，和前一天没股票，今天买完股票后的现金取较多的一方
     dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] + prices[i]) // 前一天未持有股票的现金，（今天卖完股票后的现金 + 前一天持有股票时，剩下的现金）
   }
-  return dp[dp.length - 1][1]  // 因为只允许买卖一次，所以肯定是清空股票之后的现金要比持有股票的现金多
+  return dp[dp.length - 1][1] // 因为只允许买卖一次，所以肯定是清空股票之后的现金要比持有股票的现金多
 }
 ```
+
 最后附上执行时间：
 
-|                                  | 执行用时 | 内存消耗 |
-| -------------------------------- | -------- | -------- |
-| 贪心算法                         | 80ms     | 50.5MB   |
-| 动态规划（使用fill创建二维数组） | 92ms     | 51.5MB   |
-| 动态规划（使用for创建二维数组）  | 216ms    | 78.4MB   |
+|                                    | 执行用时 | 内存消耗 |
+| ---------------------------------- | -------- | -------- |
+| 贪心算法                           | 80ms     | 50.5MB   |
+| 动态规划（使用 fill 创建二维数组） | 92ms     | 51.5MB   |
+| 动态规划（使用 for 创建二维数组）  | 216ms    | 78.4MB   |
 
 ## 小结
 
@@ -167,6 +167,6 @@ var maxProfit = function(prices) {
 
 ## 引用
 
-[力扣LeetCode的第121题-买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
+[力扣 LeetCode 的第 121 题-买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
 
-[动态规划之LeetCode: 121.买卖股票的最佳时机1——作者：代码随想录](https://www.bilibili.com/video/BV1Xe4y1u77q/?spm_id_from=333.337.search-card.all.click&vd_source=b93a2e63f467c0498e10b6110465fcb4)
+[动态规划之 LeetCode: 121.买卖股票的最佳时机 1——作者：代码随想录](https://www.bilibili.com/video/BV1Xe4y1u77q/?spm_id_from=333.337.search-card.all.click&vd_source=b93a2e63f467c0498e10b6110465fcb4)

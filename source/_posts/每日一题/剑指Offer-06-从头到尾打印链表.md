@@ -5,18 +5,17 @@ cover: 'https://cover.xdxmblog.cn/cover/cover_10125.webp'
 abbrlink: 10125
 date: 2023-04-30 13:30:20
 updated: 2023-04-30 13:30:20
-keywords:
 tags:
- - 栈结构
- - 递归算法
+  - 栈结构
+  - 递归算法
 categories: 每日一题
 ---
-今天是小呆刷题的第21天，今天的题目是：剑指Offer的第6题，从头到尾打印链表
+
+今天是小呆刷题的第 21 天，今天的题目是：剑指 Offer 的第 6 题，从头到尾打印链表
 
 ## 题目要求
 
 > 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
->
 
 <!--more-->
 
@@ -49,9 +48,11 @@ categories: 每日一题
  * @param {ListNode} head
  * @return {number[]}
  */
-var reversePrint = function(head) {
-  let arr = [], node = head, ans = []
-  while(node !== null) {
+var reversePrint = function (head) {
+  let arr = [],
+    node = head,
+    ans = []
+  while (node !== null) {
     arr.push(node.val)
     node = node.next
   }
@@ -63,10 +64,10 @@ var reversePrint = function(head) {
   	return ans
   */
   return arr.reverse() // 利用API反转数组
-};
+}
 ```
 
-当然，利用`API`的话，我们还有更加简洁的写法，毕竟JavaScript无所不能~（偷笑）
+当然，利用`API`的话，我们还有更加简洁的写法，毕竟 JavaScript 无所不能~（偷笑）
 
 ```javascript
 /**
@@ -80,14 +81,15 @@ var reversePrint = function(head) {
  * @param {ListNode} head
  * @return {number[]}
  */
-var reversePrint = function(head) {
-  let ans = [], node = head
-  while(node !== null) {
+var reversePrint = function (head) {
+  let ans = [],
+    node = head
+  while (node !== null) {
     ans.unshift(node.val)
     node = node.next
   }
   return ans
-};
+}
 ```
 
 既然用到了栈结构，那小呆很自然也能想到使用递归，毕竟递归本质上就是一种栈结构。
@@ -106,12 +108,12 @@ var reversePrint = function(head) {
  * @param {ListNode} head
  * @return {number[]}
  */
-var reversePrint = function(head) {
-  if(head === null) return []
+var reversePrint = function (head) {
+  if (head === null) return []
   const ans = reversePrint(head.next)
   ans.push(head.val)
   return ans
-};
+}
 ```
 
 ## 小结
@@ -122,6 +124,6 @@ var reversePrint = function(head) {
 
 本文内容参考了以下书籍，感兴趣的同学可以购买正版图书进行阅读。
 
-《剑指Offer 第2版》——作者：何海涛
+《剑指 Offer 第 2 版》——作者：何海涛
 
-[剑指Offer的第6题-从头到尾打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
+[剑指 Offer 的第 6 题-从头到尾打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)

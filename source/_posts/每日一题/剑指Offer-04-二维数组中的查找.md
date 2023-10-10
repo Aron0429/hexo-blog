@@ -5,12 +5,12 @@ cover: 'https://cover.xdxmblog.cn/cover/cover_8122.webp'
 abbrlink: 8122
 date: 2023-04-28 13:29:44
 updated: 2023-04-28 13:29:44
-keywords:
 tags:
- - 坐标轴法
+  - 坐标轴法
 categories: 每日一题
 ---
-今天是小呆刷题的第19天，今天的题目是：剑指Offer的第4题，二维数组中的查找
+
+今天是小呆刷题的第 19 天，今天的题目是：剑指 Offer 的第 4 题，二维数组中的查找
 
 ## 题目要求
 
@@ -64,8 +64,9 @@ categories: 每日一题
  * @param {number} target
  * @return {boolean}
  */
-var findNumberIn2DArray = function(matrix, target) {
-  let  x = matrix.length - 1, y = 0
+var findNumberIn2DArray = function (matrix, target) {
+  let x = matrix.length - 1,
+    y = 0
   while (x >= 0 && y < matrix[0].length) {
     if (matrix[x][y] === target) {
       return true
@@ -77,7 +78,7 @@ var findNumberIn2DArray = function(matrix, target) {
     }
   }
   return false
-};
+}
 ```
 
 ## 小结
@@ -88,6 +89,6 @@ var findNumberIn2DArray = function(matrix, target) {
 
 本文内容参考了以下书籍，感兴趣的同学可以购买正版图书进行阅读。
 
-《剑指Offer 第2版》——作者：何海涛
+《剑指 Offer 第 2 版》——作者：何海涛
 
-[剑指Offer的第4题-二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof)
+[剑指 Offer 的第 4 题-二维数组中的查找](https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof)
