@@ -210,8 +210,10 @@ footer:
   owner:
     enable: true
     since: 2017
+  moe_icon: /img/moe_icon.png
+  moe_icp: true
   custom_text: 欢迎来到小呆&小萌的情侣博客
-  copyright: false # Copyright of theme and framework
+  copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
 # --------------------------------------
