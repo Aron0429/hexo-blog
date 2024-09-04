@@ -152,6 +152,10 @@
     margin: 0
     padding: 0
     list-style: none
+  
+  .card-archives ul.card-archive-list
+    display: flex
+    flex-wrap: wrap
 
   .card-archives ul.card-archive-list > .card-archive-list-item,
   .card-categories ul.card-category-list > .card-category-list-item
@@ -171,6 +175,39 @@
 
         &:first-child
           flex: 1
+  
+  .card-archives ul.card-archive-list > .card-archive-list-item
+    width: 32%
+    margin-right: 2%
+
+    &:nth-child(3n)
+      margin-right: 0
+
+    a
+      flex-direction: column
+      align-content: space-between
+      border-radius: 8px
+      border: 1px solid #e3e8f7
+      margin: 4px 0
+
+      &:hover
+        padding: 3px 10px
+
+      span
+        &:first-child
+          flex: inherit
+
+  .card-archive-list-count-group
+    display: flex
+    flex-direction: row
+    align-items: baseline
+
+  span.card-archive-list-count
+    width: auto
+    text-align: left
+    font-size: 1.1rem
+    font-weight: 700
+    margin: 4px
 
   .card-categories
     .card-category-list

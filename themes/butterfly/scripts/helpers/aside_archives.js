@@ -15,9 +15,10 @@ hexo.extend.helper.register('aside_archives', function (options = {}) {
   const { transform } = options
   const showCount = Object.prototype.hasOwnProperty.call(options, 'show_count') ? options.show_count : true
   const order = options.order || -1
-  const compareFunc = type === 'monthly'
-    ? (yearA, monthA, yearB, monthB) => yearA === yearB && monthA === monthB
-    : (yearA, monthA, yearB, monthB) => yearA === yearB
+  const compareFunc =
+    type === 'monthly'
+      ? (yearA, monthA, yearB, monthB) => yearA === yearB && monthA === monthB
+      : (yearA, monthA, yearB, monthB) => yearA === yearB
   const limit = options.limit
   let result = ''
 
@@ -48,7 +49,7 @@ hexo.extend.helper.register('aside_archives', function (options = {}) {
         name,
         year,
         month,
-        count: 1
+        count: 1,
       })
     } else {
       lastData.count++
@@ -89,7 +90,10 @@ hexo.extend.helper.register('aside_archives', function (options = {}) {
     result += '</span>'
 
     if (showCount) {
+      result += `<div class="card-archive-list-count-group">`
       result += `<span class="card-archive-list-count">${item.count}</span>`
+      result += `<span>篇</span>`
+      result += `</div>`
     }
     result += '</a>'
     result += '</li>'
