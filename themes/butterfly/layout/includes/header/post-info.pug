@@ -25,6 +25,12 @@
             i.fa-fw.post-meta-icon(class=date_icon)
             span.post-meta-label= date_title
             time(datetime=date_xml(page[date_type]) title=date_title + ' ' + full_date(page[date_type]))=date(page[date_type], config.date_format)
+      if (page.author)
+        span.post-meta-author
+          span.post-meta-separator |
+          i.far.fa-solid.fa-user-pen.post-meta-icon
+          span.post-meta-label= _p('post.copyright.author') + ':'
+          a.post-meta-categories(href="/authors" + url_for(page.author))= page.author
       if (theme.post_meta.post.categories && page.categories.data.length > 0)
         span.post-meta-categories
           if (theme.post_meta.post.date_type)
@@ -35,7 +41,7 @@
             a(href=url_for(item.path)).post-meta-categories #[=item.name]
             if (index < page.categories.data.length - 1)
               i.fas.fa-angle-right.post-meta-separator
-
+              
     .meta-secondline
       - let postWordcount = theme.wordcount.enable && (theme.wordcount.post_wordcount || theme.wordcount.min2read)
       if (postWordcount)
