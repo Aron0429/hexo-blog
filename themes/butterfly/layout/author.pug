@@ -1,0 +1,14 @@
+extends includes/layout.pug
+
+block content
+  if theme.author_ui == 'index'
+    include ./includes/mixins/post-ui.pug
+    #recent-posts.recent-posts.authors_ui
+      +postUI
+      include includes/pagination.pug
+  else
+    include ./includes/mixins/article-sort.pug
+    #author
+      .article-sort-title= _p('page.authors') + ' - ' + page.author
+      +articleSort(page.posts)
+      include includes/pagination.pug

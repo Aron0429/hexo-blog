@@ -12,6 +12,7 @@ page:
   tag: Tag
   category: Category
   archives: Archives
+  authors: Authors
 
 card_post_count: comments
 

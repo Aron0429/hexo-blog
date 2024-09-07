@@ -12,6 +12,7 @@ page:
   tag: 標籤
   category: 分類
   archives: 歸檔
+  authors: 作者
 
 card_post_count: 條評論
 
@@ -47,7 +48,7 @@ search:
     input_placeholder: 搜尋文章
     hits_empty: '找不到您查詢的內容：${query}'
     hits_stats: '共找到 ${hits} 篇文章'
-    
+
 pagination:
   prev: 上一篇
   next: 下一篇

@@ -15,11 +15,29 @@ hexo.extend.helper.register('page_description', function () {
   let description = page.description || page.content || page.title || config.description
 
   if (description) {
-    description = escapeHTML(stripHTML(description).substring(0, 150)
-      .trim()
-    ).replace(/\n/g, ' ')
+    description = escapeHTML(stripHTML(description).substring(0, 150).trim()).replace(/\n/g, ' ')
     return description
   }
+})
+
+hexo.extend.helper.register('authors', function (source = []) {
+  let result = ''
+  let authors = []
+  if (source.length) {
+    source.map(post => {
+      if (post.author && !authors.includes(post.author)) {
+        authors.push(post.author)
+      }
+    })
+  }
+  if (authors.length) {
+    result += '<ul class="category-list">'
+    authors.map(author => {
+      let count = source.filter(post => post.author == author).length
+      result += `<li class="category-list-item"><a class="category-list-link" href="/authors/${author}/">${author}</a><span class="category-list-count">${count}</span></li>`
+    })
+  }
+  return result
 })
 
 hexo.extend.helper.register('cloudTags', function (options = {}) {
@@ -42,9 +60,16 @@ hexo.extend.helper.register('cloudTags', function (options = {}) {
   const length = sizes.length - 1
   source.sort(orderby, order).forEach(tag => {
     const ratio = length ? sizes.indexOf(tag.length) / length : 0
-    const size = minfontsize + ((maxfontsize - minfontsize) * ratio)
+    const size = minfontsize + (maxfontsize - minfontsize) * ratio
     let style = `font-size: ${parseFloat(size.toFixed(2))}${unit};`
-    const color = 'rgb(' + Math.floor(Math.random() * 201) + ', ' + Math.floor(Math.random() * 201) + ', ' + Math.floor(Math.random() * 201) + ')' // 0,0,0 -> 200,200,200
+    const color =
+      'rgb(' +
+      Math.floor(Math.random() * 201) +
+      ', ' +
+      Math.floor(Math.random() * 201) +
+      ', ' +
+      Math.floor(Math.random() * 201) +
+      ')' // 0,0,0 -> 200,200,200
     style += ` color: ${color}`
     result += `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}</a>`
   })
@@ -56,7 +81,10 @@ hexo.extend.helper.register('urlNoIndex', function (url = null, trailingIndex = 
 })
 
 hexo.extend.helper.register('md5', function (path) {
-  return crypto.createHash('md5').update(decodeURI(this.url_for(path))).digest('hex')
+  return crypto
+    .createHash('md5')
+    .update(decodeURI(this.url_for(path)))
+    .digest('hex')
 })
 
 hexo.extend.helper.register('injectHtml', function (data) {
@@ -78,7 +106,7 @@ hexo.extend.helper.register('findArchivesTitle', function (page, menu, date) {
   const defaultTitle = this._p('page.archives')
   if (!menu) return defaultTitle
 
-  const loop = (m) => {
+  const loop = m => {
     for (const key in m) {
       if (typeof m[key] === 'object') {
         loop(m[key])
