@@ -93,7 +93,7 @@ var singleNumber = function (nums) {
 
 老规矩，用一张动图来辅助理解思路 3：
 
-![按位异或操作符](//img.xdxmblog.cn/images/image-202304220001.gif)
+![按位异或操作符](http://img.xdxmblog.cn/images/image-202304220001.gif)
 
 ```javascript
 /**

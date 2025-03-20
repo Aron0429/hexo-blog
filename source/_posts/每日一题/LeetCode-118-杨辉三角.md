@@ -20,7 +20,7 @@ categories: 每日一题
 
 <!--more-->
 
-![杨辉三角](//img.xdxmblog.cn/images/image-202304301533030.gif)
+![杨辉三角](http://img.xdxmblog.cn/images/image-202304301533030.gif)
 
 示例：
 

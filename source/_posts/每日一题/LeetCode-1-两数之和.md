@@ -43,7 +43,7 @@ categories: 每日一题
 
 老规矩，用gif动图来辅助理解整个流程：
 
-![两数之和](//img.xdxmblog.cn/images/image-202304140001.gif)
+![两数之和](http://img.xdxmblog.cn/images/image-202304140001.gif)
 
 ```javascript
 /**

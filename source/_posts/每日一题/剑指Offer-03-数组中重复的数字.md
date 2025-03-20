@@ -77,7 +77,7 @@ var findRepeatNumber = function (nums) {
 
 老规矩，配合动图去理解更佳：
 
-![数组中重复的数字](//img.xdxmblog.cn/images/image-202304270001.gif)
+![数组中重复的数字](http://img.xdxmblog.cn/images/image-202304270001.gif)
 
 ### 原地交换
 

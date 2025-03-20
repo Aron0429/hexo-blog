@@ -59,7 +59,7 @@ var fib = function(n) {
 
 再写动态规划。为了方便第一次看小呆博客的同学，还是放一张动态帮助理解，**忽略动图里的0，因为本题`1 <= n <= 45`，所以0个台阶在本题没有意义**：
 
-![动态规划-斐波那契数](//img.xdxmblog.cn/images/image-202304190001.gif)
+![动态规划-斐波那契数](http://img.xdxmblog.cn/images/image-202304190001.gif)
 
 ```javascript
 /**
