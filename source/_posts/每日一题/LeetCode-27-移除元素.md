@@ -43,7 +43,7 @@ updated: 2023-04-12 09:35:37
 
 依旧通过图例的方式来辅助理解每一次循环过程中`fast`指针和`slow`指针的变化：
 
-![移除元素](http://img.xdxmblog.cn/images/image-202304120001.gif)
+![移除元素](https://img.xdxmblog.cn/images/article_4743_01.gif)
 
 ```javascript
 /**

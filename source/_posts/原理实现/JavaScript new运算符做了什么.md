@@ -74,7 +74,7 @@ console.log(moonCake2 instanceof MoonCakeModel) // true
 
 通过控制台打印moonCake，也能发现info和type属性都是在原型链上，而fill和id属性才是在实例对象本身上面。这也符合上面说的第2、3条。构造函数里我们并没有写任何返回值，但是却返回了一个对象。所以也符合上面说的第1、4条。
 
-![实例、构造函数、原型链](//img.xdxmblog.cn/images/image_20230330023846.png)
+![实例、构造函数、原型链](https://img.xdxmblog.cn/images/article_19802_01.png)
 
 ### 如何实现一个new运算符
 
@@ -123,7 +123,7 @@ console.log(moonCake);
 
 我们可以通过控制台打印发现：moonCake的属性值并不是我们传入myNew的参数，而是构造函数return的那个对象。并且moonCake与MoonCakeModel之前也没有了原型链的关系。
 
-![构造函数显示返回对象](//img.xdxmblog.cn/images/image-20230330031659769.png)
+![构造函数显示返回对象](https://img.xdxmblog.cn/images/article_19802_02.png)
 
 ### Object.create(null)和{}
 

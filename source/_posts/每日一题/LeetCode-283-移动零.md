@@ -84,7 +84,7 @@ console.log(moveZeroes[0, 1, 0, 3, 12]) // [1, 3, 12, 0, 0]
 
 老规矩，上动图帮助理解，加深记忆：
 
-![移动零](http://img.xdxmblog.cn/images/image-202304120002.gif)
+![移动零](https://img.xdxmblog.cn/images/article_46328_01.gif)
 
 上面的代码写了2个`while`循环，那能不能只写一种循环呢？我们来改动代码试试：
 

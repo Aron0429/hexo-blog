@@ -51,7 +51,7 @@ categories: 每日一题
 
 为了方便理解，小呆制作了一个gif图，展示了每一次循环过程中两个指针的移动过程和值修改的过程。对比下列代码更容易理解。
 
-![快慢指针](http://img.xdxmblog.cn/images/image-202304100001.gif)
+![快慢指针](https://img.xdxmblog.cn/images/image-202304100001.gif)
 
 ```javascript
 /**
