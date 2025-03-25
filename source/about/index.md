@@ -47,8 +47,4 @@ comments: false
 
 ## 博客早期设计稿
 
-![早期个人博客设计稿](//img.xdxmblog.cn/images/image-20230326154517914.png)
-
-![早期个人博客设计稿](//img.xdxmblog.cn/images/images_20230326162126.png)
-
-![情侣博客设计稿](//img.xdxmblog.cn/images/images_20230326170257.png)
+![早期个人博客设计稿](https://img.xdxmblog.cn/images/about_01.jpg)

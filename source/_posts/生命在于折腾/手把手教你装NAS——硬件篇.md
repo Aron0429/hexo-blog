@@ -53,9 +53,7 @@ tags:
 
 ### 机箱
 
-![机箱正面](http://img.xdxmblog.cn/images/article_21382_01.jpg)
-
-![机箱背面](http://img.xdxmblog.cn/images/article_21382_02.jpg)
+![机箱正反面](https://img.xdxmblog.cn/images/article_21382_01.jpg)
 
 机箱我是淘了很久，选择了这款当时叫**矩阵Z3 6盘位**现在叫**Dataline 6盘位**或者**恒煜 6盘位**的机箱，选择它的原因有2点：
 
