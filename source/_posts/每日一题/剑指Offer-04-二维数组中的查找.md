@@ -56,7 +56,7 @@ categories: 每日一题
 
 话不多说，上图：
 
-![二维数组中额查找-坐标轴法](http://img.xdxmblog.cn/images/image-202304280001.gif)
+![二维数组中额查找-坐标轴法](https://img.xdxmblog.cn/images/article_8122_01.gif)
 
 ```javascript
 /**

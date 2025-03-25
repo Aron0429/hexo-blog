@@ -140,13 +140,13 @@ hexo clean & hexo g & hexo s
 
 打开`localhost:4000/authors/`，就能查看到效果了。
 
-![效果图1](https://img.xdxmblog.cn/images/image-20240908033429398.png)
+![效果图1](https://img.xdxmblog.cn/images/article_21905_01.png)
 
 点击不同的作者，就能查看到该作者下的全部文章，不同的主题展示效果有差异，非butterfly主题自行写对应的模板及css即可。
 
 **PS:插件会默认根据`['author','archive','index']`的顺序查找对应模板，下图为`archive`的效果。**
 
-![效果图2](https://img.xdxmblog.cn/images/image-20240908033945343.png)
+![效果图2](https://img.xdxmblog.cn/images/article_21905_02.png)
 
 ## 美化
 
@@ -205,7 +205,7 @@ page:
 
 重新执行测试命令，查看美化后的效果：
 
-![效果图3](https://img.xdxmblog.cn/images/image-20240908042433521.png)
+![效果图3](https://img.xdxmblog.cn/images/article_21905_03.png)
 
 在主题配置文件`_config.butterfly.yml`中，还可以添加`author_ui`字段来决定是否使用主页模板来展示作者文章页。
 
@@ -234,7 +234,7 @@ if (page.author)
 let authorHref = page.copyright_author_href || '/authors/' + author || theme.post_copyright.author_href || config.url
 ```
 
-![效果图4](https://img.xdxmblog.cn/images/image-20240908044215010.png)
+![效果图4](https://img.xdxmblog.cn/images/article_21905_04.png)
 
 这样就可以通过文章顶部的小标识直接跳转到作者栏目下。
 

@@ -24,7 +24,7 @@ categories: 每日一题
 
 示例：
 
-![环形链表-示例图](http://img.xdxmblog.cn/images/image-20230424111500496.png)
+![环形链表-示例图](https://img.xdxmblog.cn/images/article_37519_01.png)
 
 ```
 输入：head = [3,2,0,-4], pos = 1
@@ -42,7 +42,7 @@ categories: 每日一题
 
 遇到数组，链表类的题目，首先考虑的就是**双指针算法**。在这道题中，由于存在一个环，实际上在遍历的时候，如果进入环中，就会无限循环。那其实只要两个指针的步频不一样，就会相交。上图辅助理解：
 
-![双指针算法-环形链表](http://img.xdxmblog.cn/images/image-202304240001.gif)
+![双指针算法-环形链表](https://img.xdxmblog.cn/images/article_37519_02.gif)
 
 ```javascript
 /**

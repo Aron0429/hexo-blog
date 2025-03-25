@@ -37,7 +37,7 @@ tags:
 2. 注册美区账号（注意换个邮箱，不要用亚区的邮箱注册，163，QQ等常用邮箱都可以。
 3. 注册完成后登录，点击内容和设备，这时都是空的，不用管。
 
-![注册亚马逊美区账号](https://img.xdxmblog.cn/images/image-20240627101924358.png)
+![注册亚马逊美区账号](https://img.xdxmblog.cn/images/article_29034_01.png)
 
 ### 第三步、注销亚区账号，登录美区账号
 
@@ -65,7 +65,7 @@ tags:
 
 6. 如果进入verify Account页面，打开电脑浏览器，输入第一个网址:`www.amazon.com/code`（没登陆的话登录一下，会提示注册您的设备，输入代码）。
 
-   ![重置步骤截图](https://img.xdxmblog.cn/images/202406270001.png)
+   ![重置步骤截图](https://img.xdxmblog.cn/images/article_29034_02.png)
 
 7. 点击kindle的create new code，将生成的code输入到刚刚的网址里。
 
@@ -77,7 +77,7 @@ tags:
 
 11. 等待重启，就会切换回中文模式。
 
-    ![重置步骤截图](https://img.xdxmblog.cn/images/202406270002.png)
+    ![重置步骤截图](https://img.xdxmblog.cn/images/article_29034_03.png)
 
 ## 邮箱传书教程
 
@@ -90,8 +90,8 @@ tags:
 3. 这里会看到【发送至kindle电子邮箱】仍然是`.cn`结尾（因为我们选了简体中文，所以会显示.cn，无视即可）重点是只要你的kindle里的【发送至kindle电子邮箱】是`.com`结尾即可。
 
 4. 添加认可的电子邮箱，也就是白名单，用来给kindle发送邮件。   
-   ![点击首选项](https://img.xdxmblog.cn/images/202406270003.png)
-   ![添加认可的电子邮箱](https://img.xdxmblog.cn/images/202406270004.png)
+   ![点击首选项](https://img.xdxmblog.cn/images/article_29034_04.png)
+   ![添加认可的电子邮箱](https://img.xdxmblog.cn/images/article_29034_05.png)
 
 至此，就可以继续用邮箱传书给Kindle了。
 

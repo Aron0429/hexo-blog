@@ -41,7 +41,7 @@ categories: 每日一题
 
 这道题小呆的第一思路就是用**哈希表**来解决，因为跟返回数组中出现次数最多的题的思路是一样的，只不过这道题是返回次数大于`n/2`的那个元素。
 
-![哈希表-多数元素](http://img.xdxmblog.cn/images/image-202304250001.gif)
+![哈希表-多数元素](https://img.xdxmblog.cn/images/article_53817_01.gif)
 
 ```javascript
 /**
@@ -86,7 +86,7 @@ var majorityElement = function (nums) {
 >
 > 我们可以把这个过程打个比方，比如现在多军对峙，假设阵营 A 士兵人数比其他方的人数都多，阵营 A 士兵能以一杀一，那么只要阵营 A 士兵不杀自己人（相同数字），去杀不同阵营的人（不同数字），那么最后剩下的那些士兵，就是阵营 A 的士兵。
 
-![摩尔投票-多数元素](http://img.xdxmblog.cn/images/image-20230425162018509.png)
+![摩尔投票-多数元素](https://img.xdxmblog.cn/images/article_53817_02.png)
 
 ```javascript
 /**

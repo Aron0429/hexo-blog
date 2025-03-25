@@ -81,7 +81,7 @@ var replaceSpace = function (s) {
 
 老规矩，动态辅助理解：
 
-![替换空格-双指针算法](http://img.xdxmblog.cn/images/image-202304290001.gif)
+![替换空格-双指针算法](https://img.xdxmblog.cn/images/article_50720_01.gif)
 
 ### 双指针
 
