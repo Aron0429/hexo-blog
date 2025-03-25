@@ -24,7 +24,7 @@ categories: JavaScript
 
 在说作用域之前，我们要知道JavaScript的执行过程是分为两个阶段的：代码的**编译阶段**和代码的**执行阶段**。编译阶段由编译器完成，将代码翻译成可执行代码，这个阶段作用域规则会确定。执行阶段由引擎完成，主要任务是执行可执行代码，执行上下文在这个阶段创建。
 
-![JavaScript的执行过程](//img.xdxmblog.cn/images/image_20230414013353.png)
+![JavaScript的执行过程](https://img.xdxmblog.cn/images/article_27872_01.png)
 
 作用域和执行上下文是完全不同的两个概念。一个在代码的编译阶段发生，一个在代码的执行阶段发生。
 

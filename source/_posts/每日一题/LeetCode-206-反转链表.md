@@ -20,7 +20,7 @@ updated: 2023-04-15 16:05:05
 
 示例：
 
-![反转链表](http://img.xdxmblog.cn/images/image-20230415160636127.png)
+![反转链表](https://img.xdxmblog.cn/images/article_27687_01.png)
 
 ```
 输入：head = [1,2,3,4,5]
@@ -44,7 +44,7 @@ updated: 2023-04-15 16:05:05
 
 老规矩一张动态gif图辅助理解代码：
 
-![反转链表](http://img.xdxmblog.cn/images/image-202304150001.gif)
+![反转链表](https://img.xdxmblog.cn/images/article_27687_02.gif)
 
 ```javascript
 /**

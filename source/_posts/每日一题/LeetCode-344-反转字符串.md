@@ -44,7 +44,7 @@ updated: 2023-04-17 23:16:41
 
 具体过程用gif图辅助理解一下：
 
-![反转字符串](http://img.xdxmblog.cn/images/image-202304170001.gif)
+![反转字符串](https://img.xdxmblog.cn/images/article_26802_01.gif)
 
 ```javascript
 /**

@@ -50,7 +50,7 @@ categories: 每日一题
 
 老规矩，上gif图来辅助理解：
 
-![有效的括号](http://img.xdxmblog.cn/images/image-202304180001.gif)
+![有效的括号](https://img.xdxmblog.cn/images/article_14676_01.gif)
 
 ```javascript
 /**

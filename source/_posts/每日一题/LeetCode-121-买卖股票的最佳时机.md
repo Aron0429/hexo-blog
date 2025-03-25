@@ -64,7 +64,7 @@ var maxProfit = function (prices) {
 
 暴力解法肯定不是我们想要的，因为性能比较差，例如这道题直接就超时了，所以我们要想想其他的思路。通过观察示例，其实我们想要得到的就是一个**区间范围内的最大值和最小值**。也就是`[0, prices[i]]（i >= 1）`区间范围内的最大值和最小值。所以还可以利用贪心算法来求解。老规矩用动图来辅助理解：
 
-![贪心算法](http://img.xdxmblog.cn/images/image-202304230001.gif)
+![贪心算法](https://img.xdxmblog.cn/images/article_37133_01.gif)
 
 ```javascript
 /**
@@ -125,7 +125,7 @@ var maxProfit = function (prices) {
 
 老规矩，配张动图辅助理解：
 
-![动态规划-买卖股票](//img.xdxmblog.cn/images/image-202304230002.gif)
+![动态规划-买卖股票](https://img.xdxmblog.cn/images/article_37133_02.gif)
 
 ```javascript
 /**

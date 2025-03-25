@@ -20,7 +20,7 @@ categories: 每日一题
 
 示例：
 
-![合并两个有序链表](http://img.xdxmblog.cn/images/image-20230417163218173.png)
+![合并两个有序链表](https://img.xdxmblog.cn/images/article_39311_01.png)
 
 ```
 输入：l1 = [1,2,4], l2 = [1,3,4]
@@ -43,7 +43,7 @@ categories: 每日一题
 
 具体过程用gif图辅助理解一下：
 
-![合并两个有序链表](//img.xdxmblog.cn/images/image-202304160001.gif)
+![合并两个有序链表](https://img.xdxmblog.cn/images/article_39311_02.gif)
 
 ```javascript
 /**
