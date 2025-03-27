@@ -36,6 +36,10 @@ categories: 折腾小记
 
 ![创建文件夹](https://img.xdxmblog.cn/images/article_25614_02.png)
 
+右键我们创建的mysql文件夹，选择属性，选择权限，勾选应用到子文件夹。
+
+![设置文件夹权限](https://img.xdxmblog.cn/images/article_25614_02_01.png)
+
 双击 mysql 映像并启动，输入容器名称，并点击高级设置，勾选“启用自动重新启动”。
 
 ![启动映像](https://img.xdxmblog.cn/images/article_25614_03.png)
@@ -96,6 +100,28 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '密码';
 ```
 
 ![通过native连接](https://img.xdxmblog.cn/images/article_25614_10.png)
+
+### 常见错误
+
+Q:挂载的data文件夹一直是空的，容器重启后，数据全部消失。
+
+A:检查文件的挂载路径是否跟本教程的图片内容一致，网上有的教程配置如下，下面的挂载路径是错的，虽然能正常运行，但数据只会存在容器内。
+
+- /logs
+- /data
+- /conf
+
+
+
+Q:在终端连接数据库报错：Can 't connect to local MySQL server through socket '/tmp/mysql.sock '(2) ";
+
+A：文件夹权限问题，确保按步骤给docker文件夹下创建的mysql文件夹设置了足够的权限且应用于子文件和子文件夹。
+
+
+
+Q:native连接报错：1045 - Access denied for user 'root'@'xxx.xxx.xxx.xxx'(using password:YES)
+
+A:没执行文中远程授权的步骤。
 
 ## 总结
 
