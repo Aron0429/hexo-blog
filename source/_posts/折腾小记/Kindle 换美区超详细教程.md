@@ -2,10 +2,11 @@
 title: Kindle 换美区超详细教程
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_29034.webp'
-categories: 折腾小记
 abbrlink: 29034
 date: 2024-06-27 09:50:40
 updated: 2024-06-27 09:50:40
+categories: 
+  - 折腾小记
 tags:
  - kindle
 ---

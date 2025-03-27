@@ -6,8 +6,11 @@ cover: https://cover.xdxmblog.cn/cover/cover_48878.webp
 date: 2023-04-15 02:35:46
 updated: 2023-04-15 02:35:46
 tags:
-  - 前端面试
-categories: JavaScript
+  - 面试
+  - JavaScript
+categories: 
+  - 前端积累
+  - JavaScript
 ---
 
 对于前端的同学来说，闭包这个词一定在无数的面试过程中被问到过，小呆也不例外。早些年有些公司甚至会把理解闭包当成区分初级、中级甚至高级前端工程师的一个方式。在被问到什么是闭包的时候，有些同学会回答：“闭包就是函数内部嵌套并返回一个函数”，果真如此吗？一起来复习一下闭包的知识吧。

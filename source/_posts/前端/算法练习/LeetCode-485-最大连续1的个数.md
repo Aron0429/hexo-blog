@@ -6,8 +6,10 @@ cover: https://cover.xdxmblog.cn/cover/cover_16414.webp
 date: 2023-04-21 11:07:38
 updated: 2023-04-21 11:07:38
 tags:
- - 数学运算
-categories: 算法练习
+  - 数学运算
+categories: 
+  - 前端积累
+  - 算法练习
 ---
 
 今天是小呆刷题的第12天，今天的题目是：力扣（LeetCode)的第485题，最大连续1的个数

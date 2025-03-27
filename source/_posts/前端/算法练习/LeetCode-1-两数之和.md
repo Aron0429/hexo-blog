@@ -6,8 +6,10 @@ cover: https://cover.xdxmblog.cn/cover/cover_35485.webp
 date: 2023-04-14 23:21:51
 updated: 2023-04-14 23:21:51
 tags:
- - 哈希表
-categories: 算法练习
+  - 哈希表
+categories: 
+  - 前端积累
+  - 算法练习
 ---
 
 今天是小呆刷题的第5天，今天的题目是：力扣（LeetCode)的第1题，两数之和

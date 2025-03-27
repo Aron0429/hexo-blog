@@ -1,10 +1,12 @@
 ---
-title: hexo + butterfly 实现根据作者进行文章分类查询
+title: Hexo + Butterfly 实现根据作者进行文章分类查询
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_21905.webp'
-categories: 折腾小记
+categories: 
+  - 前端积累
+  - Hexo
 tags:
-  - hexo
+  - Hexo
 abbrlink: 21905
 date: 2024-09-08 02:28:40
 updated: 2024-09-08 02:28:40

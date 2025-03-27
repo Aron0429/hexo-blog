@@ -5,9 +5,11 @@ cover: 'https://cover.xdxmblog.cn/cover/cover_21382.webp'
 abbrlink: 21382
 date: 2025-03-08 21:50:02
 updated: 2025-03-08 21:50:02
-categories: 折腾小记
+categories: 
+  - 折腾小记
+  - NAS
 tags:
-- NAS
+  - NAS
 ---
 
 自己DIY的家庭NAS已经稳定使用一年半了，最近又刷到了很多成品NAS的软广，感觉真的是把很多不懂数码的小白当韭菜割。所以我决定写一个系列性教程，供那些想要DIY但又不知如何操作的小伙伴参考，话不多说，开干！

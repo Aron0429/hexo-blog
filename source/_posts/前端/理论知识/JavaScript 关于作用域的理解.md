@@ -6,8 +6,11 @@ cover: https://cover.xdxmblog.cn/cover/cover_27872.webp
 date: 2023-04-14 02:27:57
 updated: 2023-04-14 02:27:57
 tags:
-  - 前端面试
-categories: JavaScript
+  - 面试
+  - JavaScript
+categories: 
+  - 前端积累
+  - JavaScript
 ---
 
 如果你对作用域、作用域链、词法作用域等概念还傻傻分不清楚，那就看看这篇文章吧。了解作用域相关知识，也有助于理解闭包、执行上下文等`JS`核心知识。跟随小呆的视角，一起来复习一下吧。

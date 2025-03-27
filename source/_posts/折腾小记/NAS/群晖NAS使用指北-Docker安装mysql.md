@@ -9,7 +9,9 @@ keywords:
 tags:
   - NAS
   - MySQL
-categories: 折腾小记
+categories: 
+  - 折腾小记
+  - NAS
 ---
 
 玩 NAS 有一段时间了，最近准备试试在 NAS 上面安装 MySQL 数据库，用来存放一些自己折腾的数据，由于对 Docker 搭建 MySQL 还不是特别熟悉，特通过此笔记进行记录，方便后续查看。

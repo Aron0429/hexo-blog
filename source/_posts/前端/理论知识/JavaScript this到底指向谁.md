@@ -4,8 +4,11 @@ author: 小呆
 abbrlink: 45186
 cover: https://cover.xdxmblog.cn/cover/cover_45186.webp
 tags:
-  - 前端面试
-categories: JavaScript
+  - 面试
+  - JavaScript
+categories: 
+  - 前端积累
+  - JavaScript
 date: 2023-04-07 17:36:44
 updated: 2023-04-07 17:36:44
 ---

@@ -3,7 +3,9 @@ title: LeetCode(83)删除排序链表中的重复元素
 author: 小呆
 tags:
   - 双指针算法
-categories: 算法练习
+categories: 
+  - 前端积累
+  - 算法练习
 abbrlink: 39872
 cover: https://cover.xdxmblog.cn/cover/cover_39872.webp
 date: 2023-04-11 13:00:15

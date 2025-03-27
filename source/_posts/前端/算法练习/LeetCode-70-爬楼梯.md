@@ -6,9 +6,11 @@ cover: https://cover.xdxmblog.cn/cover/cover_55221.webp
 date: 2023-04-20 17:36:41
 updated: 2023-04-20 17:36:41
 tags:
- - 递归算法
- - 动态规划算法
-categories: 算法练习
+  - 递归算法
+  - 动态规划算法
+categories: 
+  - 前端积累
+  - 算法练习
 ---
 
 今天是小呆刷题的第11天，今天的题目是：力扣（LeetCode)的第70题，爬楼梯

@@ -3,7 +3,9 @@ title: LeetCode(283)移动零
 author: 小呆
 tags:
   - 双指针算法
-categories: 算法练习
+categories: 
+  - 前端积累
+  - 算法练习
 abbrlink: 46328
 cover: https://cover.xdxmblog.cn/cover/cover_46328.webp
 date: 2023-04-13 10:17:45
