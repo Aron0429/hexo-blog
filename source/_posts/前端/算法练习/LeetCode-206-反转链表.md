@@ -3,7 +3,7 @@ title: LeetCode(206)反转链表
 author: 小呆
 tags:
   - 双指针算法
-categories: 每日一题
+categories: 算法练习
 abbrlink: 27687
 cover: https://cover.xdxmblog.cn/cover/cover_27687.webp
 date: 2023-04-15 16:05:05

@@ -3,7 +3,7 @@ title: LeetCode(27)移除元素
 author: 小呆
 tags:
   - 双指针算法
-categories: 每日一题
+categories: 算法练习
 abbrlink: 4743
 cover: https://cover.xdxmblog.cn/cover/cover_4743.webp
 date: 2023-04-12 09:35:37
