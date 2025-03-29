@@ -986,7 +986,7 @@ CDN:
     # canvas_nest:
     # lazyload:
     # instantpage:
-    typed: https://cdn.xdxmblog.cn/scripts/typed/typed.js
+    # typed:
     # pangu:
     # fancybox_css:
     # fancybox:
