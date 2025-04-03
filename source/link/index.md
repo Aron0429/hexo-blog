@@ -1,7 +1,7 @@
 ---
 title: 友情链接
 date: 2023-04-20 12:29:56
-type: "link"
+type: 'link'
 ---
 
 ---
@@ -22,7 +22,7 @@ type: "link"
 
 交换友链请使用下面的格式留言，欢迎大家交换友链！
 
-站点名称：小呆&小萌的情侣博客
+站点名称：呆萌's Blog
 
 站点地址：[https://xdxmblog.cn](https://xdxmblog.cn)
 
@@ -35,10 +35,11 @@ type: "link"
 ## 本站的友链信息
 
 {% tabs 默认格式 %}
-<!-- tab -->
+
+<!-- tab 默认格式 -->
 
 ```yaml
-站点名称：小呆&小萌的情侣博客
+站点名称：呆萌's Blog
 站点地址：https://xdxmblog.cn
 站点头像：https://img.xdxmblog.cn/blogImage/avatar.jpeg
 站点描述：记录两个程序员的点点滴滴
@@ -46,14 +47,15 @@ type: "link"
 
 <!-- endtab -->
 
-<!-- tab -->
+<!-- tab yaml-->
 
 ```yaml
-- name: 小呆&小萌的情侣博客
-  link: https://xdxmblog.cn
-  avatar: https://img.xdxmblog.cn/blogImage/avatar.jpeg
-  descr: 记录两个程序员的点点滴滴
+name: 呆萌's Blog
+link: https://xdxmblog.cn
+avatar: https://img.xdxmblog.cn/blogImage/avatar.jpeg
+descr: 记录两个程序员的点点滴滴
 ```
 
 <!-- endtab -->
+
 {% endtabs %}
