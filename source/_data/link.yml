@@ -3,9 +3,9 @@
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-cn/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      avatar: https://www.xdxmblog.net/img/hexo_logo.png
       descr: 快速、简单且强大的网站框架
     - name: Butterfly
       link: https://butterfly.js.org/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      avatar: https://www.xdxmblog.net/img/butterfly_icon.png
       descr: 一款易上手，功能丰富的Hexo主题
