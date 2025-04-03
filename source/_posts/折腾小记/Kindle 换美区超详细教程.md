@@ -91,8 +91,8 @@ tags:
 3. 这里会看到【发送至kindle电子邮箱】仍然是`.cn`结尾（因为我们选了简体中文，所以会显示.cn，无视即可）重点是只要你的kindle里的【发送至kindle电子邮箱】是`.com`结尾即可。
 
 4. 添加认可的电子邮箱，也就是白名单，用来给kindle发送邮件。   
-   ![点击首选项](https://img.xdxmblog.cn/images/article_29034_04.png)
-   ![添加认可的电子邮箱](https://img.xdxmblog.cn/images/article_29034_05.png)
+   ![点击首选项](https://img.xdxmblog.cn/images/article_29034_04.jpg)
+   ![添加认可的电子邮箱](https://img.xdxmblog.cn/images/article_29034_05.jpg)
 
 至此，就可以继续用邮箱传书给Kindle了。
 
