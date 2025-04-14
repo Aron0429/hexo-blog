@@ -1,5 +1,5 @@
 ---
-title: Node + Express + MySQL 开发RESULT API(一)
+title: Node + Express + MySQL 开发RESULT API(一)框架搭建
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_26719.webp'
 categories:
@@ -13,7 +13,9 @@ date: 2025-04-01 16:28:40
 updated: 2025-04-01 16:28:40
 ---
 
-最近在用`uni-app`给娃做一个日常习惯打卡的APP，后端接口打算用`Node+Express`去做，后续部署到Serverless，虽然近几年出了很多Node框架，但思虑再三，还是选择用比较成熟的Express来做，毕竟社区成熟度在这儿摆着。
+最近在用`uni-app`给娃做一个日常习惯打卡的APP + 小程序，后端接口打算用`Node+Express`去做，后续部署到Serverless，虽然近几年出了很多Node框架，但思虑再三，还是选择用比较成熟的Express来做，毕竟社区成熟度在这儿摆着。
+
+<!--more-->
 
 ## 初始化
 
@@ -206,10 +208,10 @@ found 0 vulnerabilities
 
 ### 数据库配置
 
-在`src`目录下新建`config`文件夹，用于存放配置文件，同时在该文件夹下创建`config.js`文件，在该文件内添加以下代码：
+在`src`目录下新建`config`文件夹，用于存放配置文件，同时在该文件夹下创建`index.js`文件，在该文件内添加以下代码：
 
 ```javascript
-module.export = {
+module.exports = {
   dbConfig: {
     host: '127.0.0.1', // 数据库地址
     port: '8996', // 端口
@@ -225,7 +227,7 @@ module.export = {
 ```javascript
 // 由于能够更好的使用Promise,这里选择引入promise模块
 const mysql = require('mysql2/promise')
-const config = require('../config/config')
+const config = require('../config')
 
 // 建立与mysql数据库的连接池
 const pool = mysql.createPool({
@@ -243,15 +245,24 @@ module.exports = pool
 
 打开本地的MySQL数据库，创建一个名为`test`的数据库，并新建一个`user_type`的表，写入以下数据：（如何安装MySQL,创建数据库表等内容，由于不是本系列笔记的重点，这里不再赘述，网上找教程即可）
 
-| id   | name | create_time         | update_time |
-| ---- | ---- | ------------------- | ----------- |
-| 1    | 妈妈 | 2025-03-28 10:20:55 | null        |
-| 2    | 爸爸 | 2025-03-28 10:20:55 | null        |
-| 3    | 爷爷 | 2025-03-28 10:20:55 | null        |
-| 4    | 奶奶 | 2025-03-28 10:20:55 | null        |
-| 5    | 姥爷 | 2025-03-28 10:20:55 | null        |
-| 6    | 姥姥 | 2025-03-28 10:20:55 | null        |
-| 7    | 亲人 | 2025-03-28 10:20:55 | null        |
+| 名          | 类型     | 长度 | 小数点 | 不是null | 虚拟 | 键   | 注释                                          |
+| ----------- | -------- | ---- | ------ | -------- | ---- | ---- | --------------------------------------------- |
+| id          | tinyint  | 2    | 0      | √        |      | √    | 用户身份类型id                                |
+| name        | varchar  | 2    | 0      | √        |      |      | 用户身份类型名称                              |
+| create_time | datetime | 0    | 0      |          |      |      | 创建时间（默认值CURRENT_TIMESTAMP）           |
+| update_time | datetime | 0    | 0      |          |      |      | 更新时间（默认值CURRENT_TIMESTAMP，自动更新） |
+
+创建好表后预先写入以下数据。
+
+| id   | name | create_time         | update_time         |
+| ---- | ---- | ------------------- | ------------------- |
+| 1    | 妈妈 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
+| 2    | 爸爸 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
+| 3    | 爷爷 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
+| 4    | 奶奶 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
+| 5    | 姥爷 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
+| 6    | 姥姥 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
+| 7    | 亲人 | 2025-03-28 10:20:55 | 2025-03-28 10:20:55 |
 
 ## 编写接口
 
@@ -263,22 +274,17 @@ module.exports = pool
 
 ```javascript
 const pool = require('./db')
-// 用户相关的数据库操作方法都挂载到User上，方便调用
-const User = function (user) {}
 
-// 查询
-User.getAllType = async () => {
-  let sql = 'SELECT * FROM user_type' // 要执行的SQL语句
+// 查询用户身份列表
+exports.getAllType = async () => {
+  let sql = 'select * from user_type' // 要执行的SQL语句
   try {
     const [rows, fields] = await pool.query(sql) // rows返回查询结果，fields返回该表的字段名数组，一般用不到
-    return Promise.resolve(rows) //执行成功，通过Promise返回
+    return rows //执行成功，返回数据集
   } catch (error) {
-    console.log('error:', error)
-    return Promise.reject(error) //执行失败，返回错误信息
+    throw { message: '查询失败，请稍后重试' } //执行失败，返回错误信息
   }
 }
-
-module.exports = User
 ```
 
 ### 与前端的逻辑
@@ -293,8 +299,10 @@ exports.findAllType = async (req, res) => {
     const result = await User.getAllType()
     res.send({ code: 200, message: '成功', data: result })
   } catch (error) {
-    res.status(500).send({
+    res.status(error.status || 500).send({
+      code: error.code || -1,
       message: error.message || '服务器内部错误',
+      data: null
     })
   }
 }
@@ -306,12 +314,12 @@ exports.findAllType = async (req, res) => {
 
 ```javascript
 const express = require('express')
-const users = require('../controllers/user.controller')
+const userController = require('../controllers/user.controller')
 // 创建路由对象
 const router = express.Router()
 
 // 获取用户分类
-router.get('/type', users.findAllType)
+router.get('/type', userController.findAllType)
 
 module.exports = router
 ```
@@ -319,8 +327,57 @@ module.exports = router
 现在我们刷新浏览器`http://127.0.0.1:3000/api/user/type`,就能看到数据库返回的数据啦~
 
 ```json
-{"code":200,"message":"成功","data":[{"id":1,"name":"妈妈","create_time":"2025-03-28T02:20:55.000Z","update_time":null},{"id":2,"name":"爸爸","create_time":"2025-03-28T02:20:55.000Z","update_time":null},{"id":3,"name":"爷爷","create_time":"2025-03-28T02:20:55.000Z","update_time":null},{"id":4,"name":"奶奶","create_time":"2025-03-28T02:20:55.000Z","update_time":null},{"id":5,"name":"姥爷","create_time":"2025-03-28T02:20:55.000Z","update_time":null},{"id":6,"name":"姥姥","create_time":"2025-03-28T02:20:55.000Z","update_time":null},{"id":7,"name":"亲人","create_time":"2025-03-28T02:20:55.000Z","update_time":null}]}
+{
+    "code": 200,
+    "message": "成功",
+    "data": [
+        {
+            "id": 1,
+            "name": "妈妈",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        },
+        {
+            "id": 2,
+            "name": "爸爸",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        },
+        {
+            "id": 3,
+            "name": "爷爷",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        },
+        {
+            "id": 4,
+            "name": "奶奶",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        },
+        {
+            "id": 5,
+            "name": "姥爷",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        },
+        {
+            "id": 6,
+            "name": "姥姥",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        },
+        {
+            "id": 7,
+            "name": "亲人",
+            "create_time": "2025-03-28T02:20:55.000Z",
+            "update_time": "2025-03-28T02:20:55.000Z"
+        }
+    ]
+}
 ```
+
+> tips:不过为了方便调试接口，最好能在电脑安装诸如`Apifox、Postman`等接口调试工具。
 
 ## 小结
 
