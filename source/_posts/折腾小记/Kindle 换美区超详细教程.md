@@ -38,7 +38,7 @@ tags:
 2. 注册美区账号（注意换个邮箱，不要用亚区的邮箱注册，163，QQ等常用邮箱都可以。
 3. 注册完成后登录，点击内容和设备，这时都是空的，不用管。
 
-![注册亚马逊美区账号](https://img.xdxmblog.cn/images/article_29034_01.png)
+![注册亚马逊美区账号](https://img.xdxmblog.cn/images/article_29034_01.webp)
 
 ### 第三步、注销亚区账号，登录美区账号
 
@@ -66,7 +66,7 @@ tags:
 
 6. 如果进入verify Account页面，打开电脑浏览器，输入第一个网址:`www.amazon.com/code`（没登陆的话登录一下，会提示注册您的设备，输入代码）。
 
-   ![重置步骤截图](https://img.xdxmblog.cn/images/article_29034_02.png)
+   ![重置步骤截图](https://img.xdxmblog.cn/images/article_29034_02.webp)
 
 7. 点击kindle的create new code，将生成的code输入到刚刚的网址里。
 
@@ -78,7 +78,7 @@ tags:
 
 11. 等待重启，就会切换回中文模式。
 
-    ![重置步骤截图](https://img.xdxmblog.cn/images/article_29034_03.png)
+    ![重置步骤截图](https://img.xdxmblog.cn/images/article_29034_03.web)
 
 ## 邮箱传书教程
 
