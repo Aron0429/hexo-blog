@@ -3,8 +3,8 @@ title: LeetCode(509)斐波那契数
 author: 小呆
 abbrlink: 53417
 cover: https://cover.xdxmblog.cn/cover/cover_53417.webp
-date: 2023-04-19 15:40:25
-updated: 2023-04-19 15:40:25
+date: 2023-05-31 15:40:25
+updated: 2023-05-31 15:40:25
 tags:
   - 递归算法
   - 动态规划算法
@@ -13,7 +13,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第10天，今天的题目是：力扣（LeetCode)的第509题，斐波那契数
+今天要练习的题目是：力扣（LeetCode)的第509题，斐波那契数
 
 ## 题目要求
 

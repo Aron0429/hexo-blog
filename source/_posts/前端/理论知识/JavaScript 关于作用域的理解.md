@@ -3,8 +3,8 @@ title: JavaScript 关于作用域的理解
 author: 小呆
 abbrlink: 27872
 cover: https://cover.xdxmblog.cn/cover/cover_27872.webp
-date: 2023-04-14 02:27:57
-updated: 2023-04-14 02:27:57
+date: 2023-04-20 02:27:57
+updated: 2023-04-20 02:27:57
 tags:
   - 面试
   - JavaScript

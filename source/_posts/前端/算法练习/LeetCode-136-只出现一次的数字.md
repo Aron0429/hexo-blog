@@ -3,8 +3,8 @@ title: LeetCode(136)只出现一次的数字
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_58546.webp'
 abbrlink: 58546
-date: 2023-04-22 23:35:14
-updated: 2023-04-22 23:35:14
+date: 2023-06-11 23:35:14
+updated: 2023-06-11 23:35:14
 tags:
   - 位运算
 categories: 
@@ -12,7 +12,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 13 天，今天的题目是：力扣（LeetCode)的第 136 题，只出现一次的数字
+今天要练习的题目是：力扣（LeetCode)的第 136 题，只出现一次的数字
 
 ## 题目要求
 

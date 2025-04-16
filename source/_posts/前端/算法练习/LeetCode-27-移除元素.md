@@ -8,11 +8,11 @@ categories:
   - 算法练习
 abbrlink: 4743
 cover: https://cover.xdxmblog.cn/cover/cover_4743.webp
-date: 2023-04-12 09:35:37
-updated: 2023-04-12 09:35:37
+date: 2023-05-02 09:35:37
+updated: 2023-05-02 09:35:37
 ---
 
-今天是小呆刷题的第3天，今天的题目是：力扣（LeetCode)的第27题，移除元素
+今天要练习的题目是：力扣（LeetCode)的第27题，移除元素
 
 ## 题目要求
 

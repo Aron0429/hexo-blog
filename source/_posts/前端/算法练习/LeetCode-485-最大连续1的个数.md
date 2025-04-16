@@ -3,8 +3,8 @@ title: LeetCode(485)最大连续1的个数
 author: 小呆
 abbrlink: 16414
 cover: https://cover.xdxmblog.cn/cover/cover_16414.webp
-date: 2023-04-21 11:07:38
-updated: 2023-04-21 11:07:38
+date: 2023-06-06 11:07:38
+updated: 2023-06-06 11:07:38
 tags:
   - 数学运算
 categories: 
@@ -12,7 +12,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第12天，今天的题目是：力扣（LeetCode)的第485题，最大连续1的个数
+今天要练习的题目是：力扣（LeetCode)的第485题，最大连续1的个数
 
 ## 题目要求
 

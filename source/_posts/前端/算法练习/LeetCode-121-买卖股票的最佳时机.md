@@ -3,8 +3,8 @@ title: LeetCode(121)买卖股票的最佳时机
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_37133.webp'
 abbrlink: 37133
-date: 2023-04-23 00:04:43
-updated: 2023-04-23 00:04:43
+date: 2023-06-15 00:04:43
+updated: 2023-06-15 00:04:43
 tags:
   - 贪心算法
   - 动态规划
@@ -13,7 +13,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 14 天，今天的题目是：力扣（LeetCode)的第 121 题，买卖股票的最佳时机
+今天要练习的题目是：力扣（LeetCode)的第 121 题，买卖股票的最佳时机
 
 ## 题目要求
 

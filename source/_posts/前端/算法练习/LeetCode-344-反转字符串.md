@@ -8,11 +8,11 @@ categories:
   - 算法练习
 abbrlink: 26802
 cover: https://cover.xdxmblog.cn/cover/cover_26802.webp
-date: 2023-04-17 23:16:41
-updated: 2023-04-17 23:16:41
+date: 2023-05-22 23:16:41
+updated: 2023-05-22 23:16:41
 ---
 
-今天是小呆刷题的第8天，今天的题目是：力扣（LeetCode)的第344题，反转字符串
+今天要练习的题目是：力扣（LeetCode)的第344题，反转字符串
 
 ## 题目要求
 

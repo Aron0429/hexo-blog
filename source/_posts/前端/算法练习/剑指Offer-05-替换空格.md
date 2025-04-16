@@ -3,8 +3,8 @@ title: 剑指Offer(05)替换空格
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_50720.webp'
 abbrlink: 50720
-date: 2023-04-29 13:30:06
-updated: 2023-04-29 13:30:06
+date: 2023-07-13 13:30:06
+updated: 2023-07-13 13:30:06
 tags:
   - 双指针算法
 categories: 
@@ -12,7 +12,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 20 天，今天的题目是：剑指 Offer 的第 5 题，替换空格
+今天要练习的题目是：剑指 Offer 的第 5 题，替换空格
 
 ## 题目要求
 

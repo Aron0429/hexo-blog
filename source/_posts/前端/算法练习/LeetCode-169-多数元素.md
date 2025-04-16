@@ -3,8 +3,8 @@ title: LeetCode(169)多数元素
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_53817.webp'
 abbrlink: 53817
-date: 2023-04-25 15:12:07
-updated: 2023-04-25 15:12:07
+date: 2023-06-22 15:12:07
+updated: 2023-06-22 15:12:07
 tags:
   - 哈希表
   - 摩尔投票算法
@@ -13,7 +13,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 16 天，今天的题目是：力扣（LeetCode)的第 169 题，多数元素
+今天要练习的题目是：力扣（LeetCode)的第 169 题，多数元素
 
 ## 题目要求
 

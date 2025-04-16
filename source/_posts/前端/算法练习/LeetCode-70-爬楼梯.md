@@ -3,8 +3,8 @@ title: LeetCode(70)爬楼梯
 author: 小呆
 abbrlink: 55221
 cover: https://cover.xdxmblog.cn/cover/cover_55221.webp
-date: 2023-04-20 17:36:41
-updated: 2023-04-20 17:36:41
+date: 2023-06-03 17:36:41
+updated: 2023-06-03 17:36:41
 tags:
   - 递归算法
   - 动态规划算法
@@ -13,7 +13,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第11天，今天的题目是：力扣（LeetCode)的第70题，爬楼梯
+今天要练习的题目是：力扣（LeetCode)的第70题，爬楼梯
 
 ## 题目要求
 

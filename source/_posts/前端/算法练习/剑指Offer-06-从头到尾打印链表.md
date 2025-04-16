@@ -3,8 +3,8 @@ title: 剑指Offer(06)从头到尾打印链表
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_10125.webp'
 abbrlink: 10125
-date: 2023-04-30 13:30:20
-updated: 2023-04-30 13:30:20
+date: 2023-07-17 13:30:20
+updated: 2023-07-17 13:30:20
 tags:
   - 栈结构
   - 递归算法
@@ -13,7 +13,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 21 天，今天的题目是：剑指 Offer 的第 6 题，从头到尾打印链表
+今天要练习的题目是：剑指 Offer 的第 6 题，从头到尾打印链表
 
 ## 题目要求
 

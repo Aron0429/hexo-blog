@@ -3,8 +3,8 @@ title: LeetCode(21)合并两个有序链表
 author: 小呆
 abbrlink: 39311
 cover: https://cover.xdxmblog.cn/cover/cover_39311.webp
-date: 2023-04-16 16:28:05
-updated: 2023-04-16 16:28:05
+date: 2023-05-17 16:28:05
+updated: 2023-05-17 16:28:05
 tags:
   - 递归算法
 categories: 
@@ -12,7 +12,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第7天，今天的题目是：力扣（LeetCode)的第21题，合并两个有序链表
+今天要练习的题目是：力扣（LeetCode)的第21题，合并两个有序链表
 
 ## 题目要求
 

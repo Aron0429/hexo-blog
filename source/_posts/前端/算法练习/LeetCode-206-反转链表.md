@@ -8,11 +8,11 @@ categories:
   - 算法练习
 abbrlink: 27687
 cover: https://cover.xdxmblog.cn/cover/cover_27687.webp
-date: 2023-04-15 16:05:05
-updated: 2023-04-15 16:05:05
+date: 2023-05-13 16:05:05
+updated: 2023-05-13 16:05:05
 ---
 
-今天是小呆刷题的第6天，今天的题目是：力扣（LeetCode)的第206题，反转链表
+今天要练习的题目是：力扣（LeetCode)的第206题，反转链表
 
 ## 题目要求
 

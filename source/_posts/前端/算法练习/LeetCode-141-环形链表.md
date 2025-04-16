@@ -3,8 +3,8 @@ title: LeetCode(141)环形链表
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_37519.webp'
 abbrlink: 37519
-date: 2023-04-24 11:00:44
-updated: 2023-04-24 11:00:44
+date: 2023-06-19 11:00:44
+updated: 2023-06-19 11:00:44
 tags:
   - 双指针算法
 categories: 
@@ -12,7 +12,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 15 天，今天的题目是：力扣（LeetCode)的第 141 题，环形链表
+今天要练习的题目是：力扣（LeetCode)的第 141 题，环形链表
 
 ## 题目要求
 

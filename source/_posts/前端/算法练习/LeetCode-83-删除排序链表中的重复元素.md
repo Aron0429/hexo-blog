@@ -8,11 +8,11 @@ categories:
   - 算法练习
 abbrlink: 39872
 cover: https://cover.xdxmblog.cn/cover/cover_39872.webp
-date: 2023-04-11 13:00:15
-updated: 2023-04-11 13:00:15
+date: 2023-04-30 13:00:15
+updated: 2023-04-30 13:00:15
 ---
 
-今天是小呆刷题的第2天，今天的题目是：力扣（LeetCode)的第83题，删除排序链表中的重复元素
+今天要练习的题目是：力扣（LeetCode)的第83题，删除排序链表中的重复元素
 
 ## 题目要求
 

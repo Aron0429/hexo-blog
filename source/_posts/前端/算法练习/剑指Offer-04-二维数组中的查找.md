@@ -3,8 +3,8 @@ title: 剑指Offer(04)二维数组中的查找
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_8122.webp'
 abbrlink: 8122
-date: 2023-04-28 13:29:44
-updated: 2023-04-28 13:29:44
+date: 2023-07-08 13:29:44
+updated: 2023-07-08 13:29:44
 tags:
   - 坐标轴法
 categories: 
@@ -12,7 +12,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 19 天，今天的题目是：剑指 Offer 的第 4 题，二维数组中的查找
+今天要练习的题目是：剑指 Offer 的第 4 题，二维数组中的查找
 
 ## 题目要求
 

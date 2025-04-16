@@ -3,8 +3,8 @@ title: 剑指Offer(03)数组中重复的数字
 author: 小呆
 cover: 'https://cover.xdxmblog.cn/cover/cover_18093.webp'
 abbrlink: 18093
-date: 2023-04-27 11:33:12
-updated: 2023-04-27 11:33:12
+date: 2023-07-01 11:33:12
+updated: 2023-07-01 11:33:12
 tags:
   - 哈希表
   - 排序算法
@@ -13,7 +13,7 @@ categories:
   - 算法练习
 ---
 
-今天是小呆刷题的第 18 天，今天的题目是：剑指 Offer 的第 3 题，数组中重复的数字
+今天要练习的题目是：剑指 Offer 的第 3 题，数组中重复的数字
 
 ## 题目要求
 
