@@ -282,7 +282,7 @@ exports.getAllType = async () => {
     const [rows, fields] = await pool.query(sql) // rows返回查询结果，fields返回该表的字段名数组，一般用不到
     return rows //执行成功，返回数据集
   } catch (error) {
-    throw { message: '查询失败，请稍后重试' } //执行失败，返回错误信息
+    throw '查询失败，请稍后重试' //执行失败，返回错误信息
   }
 }
 ```
@@ -299,9 +299,9 @@ exports.findAllType = async (req, res) => {
     const result = await User.getAllType()
     res.send({ code: 200, message: '成功', data: result })
   } catch (error) {
-    res.status(error.status || 500).send({
-      code: error.code || -1,
-      message: error.message || '服务器内部错误',
+    res.status(500).send({
+      code: 500,
+      message: error || '服务器内部错误',
       data: null
     })
   }

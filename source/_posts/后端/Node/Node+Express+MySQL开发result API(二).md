@@ -212,19 +212,18 @@ exports.sendEmailCode = async email => {
     await transporter.sendMail(mailOptin)
     return null
   } catch (error) {
-    throw { message: '验证码发送失败，请重新尝试' }
+    throw '验证码发送失败，请重新尝试'
   }
 }
 
 // 查询用户
 exports.findUser = async (findType, data) => {
-  let sql = `select * from user where ${findType} = ?`
-
   try {
+    let sql = `select * from user where ${findType} = ?`
     const [rows] = await pool.query(sql, [data])
     return rows
   } catch (error) {
-    throw { code: -9, message: '服务器内部错误，请稍后重试' }
+    throw '服务器内部错误，请稍后重试'
   }
 }
 
@@ -234,7 +233,7 @@ exports.deleteCode = async email => {
     let deleteSQL = `delete from temp_user_code where email='${email}'`
     await pool.query(deleteSQL, [email])
   } catch (error) {
-    throw { code: -10, message: '服务器内部错误，请稍后重试' }
+    throw '服务器内部错误，请稍后重试'
   }
 }
 ```
@@ -272,7 +271,7 @@ exports.verifyCode = async (email, code, type = 'register') => {
     }
     return false
   } catch (error) {
-    throw { code: -8, message: '服务器内部错误，请稍后重试' }
+    throw '服务器内部错误，请稍后重试'
   }
 }
 ```
@@ -296,10 +295,10 @@ exports.register = async (req, res, next) => {
       const result = await User.register(email, code, type_id)
       res.send({ code: 200, message: '注册成功', data: result })
     } catch (error) {
-      res.status(error.status || 500).send({
-        code: -1,
-        message: error.message || '服务器内部错误',
-        data: error.data || null,
+      res.status(500).send({
+        code: 500,
+        message: error || '服务器内部错误',
+        data: null,
       })
     }
   }
@@ -315,12 +314,12 @@ exports.register = async (email, code, type_id) => {
     // 查询邮箱是否已被注册
     const users = await this.findUser('email', email)
     if (users.length > 0) {
-      throw { status: 200, message: '该邮箱已被注册' }
+      throw '该邮箱已被注册'
     } else {
       const isTrue = await this.verifyCode(email, code)
 
       if (!isTrue) {
-        throw { status: 200, message: '验证码错误或已过期' }
+        throw '验证码错误或已过期'
       }
 
       let createSQL = 'insert into user (email, type_id) value(?,?)'
@@ -332,7 +331,7 @@ exports.register = async (email, code, type_id) => {
       }
     }
   } catch (error) {
-    throw { message: '注册失败，请稍后重试' }
+    throw '注册失败，请稍后重试'
   }
 }
 ```
