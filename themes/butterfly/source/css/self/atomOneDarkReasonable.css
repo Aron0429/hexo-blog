@@ -140,11 +140,11 @@ Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
 #article-container figure.highlight .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 0 0.5em;
   color: #abb2bf !important;
   background: #282c34 !important;
   color:white;
-  font-size:13px !important;
+  font-size:16px !important;
   font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace !important;
 }
 #article-container figure.highlight .highlight-tools::before {
@@ -156,6 +156,10 @@ Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
   content: ' ';
   height: 12px;
   width: 12px;
+}
+
+#article-container figure.highlight .gutter pre .line {
+  font-size: 16px;
 }
 
 .hljs-keyword, .hljs-operator {
