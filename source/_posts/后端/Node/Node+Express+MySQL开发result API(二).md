@@ -193,7 +193,7 @@ exports.sendEmailCode = async email => {
     // 生成验证码，过期时间
     const { code, expiresAt } = utils.generateCode()
     // 查询当前邮箱是否被注册
-    const [users] = await this.findUser('email', email)
+    const users = await this.findUser('email', email)
 
     if (users && users.length > 0) {
       // 保存登录验证码
