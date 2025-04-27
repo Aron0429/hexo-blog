@@ -11,6 +11,7 @@ tags:
 abbrlink: 60030
 date: 2025-04-10 14:50:07
 updated: 2025-04-10 14:50:07
+series: RESULTAPI
 ---
 
 上一篇笔记主要记录了如何快速搭建一个用`Node + Express + MySQL`开发的RESULT API小项目，并且编写并运行了一个GET接口。这篇笔记会继续完善这个小项目，将API开发中的CURD完整的写出来。

@@ -11,6 +11,7 @@ tags:
 abbrlink: 26719
 date: 2025-04-01 16:28:40
 updated: 2025-04-01 16:28:40
+series: RESULTAPI
 ---
 
 最近在用`uni-app`给娃做一个日常习惯打卡的APP + 小程序，后端接口打算用`Node+Express`去做，后续部署到Serverless，虽然近几年出了很多Node框架，但思虑再三，还是选择用比较成熟的Express来做，毕竟社区成熟度在这儿摆着。
