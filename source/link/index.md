@@ -34,7 +34,7 @@ type: 'link'
 
 ## 本站的友链信息
 
-{% tabs 默认格式 %}
+{% tabs link-tabs %}
 
 <!-- tab 默认格式 -->
 

@@ -4,8 +4,25 @@
   font-display: swap;
   src: url('/font/ResourceHanRounded.woff2') format("woff2");
 }
+#article-container.post-content {
+  font-size: 16px;
+}
+
+.article-sort-item-title {
+  font-size: 1.1em;
+}
+
+.article-sort-item-time {
+  font-size: .95em;
+}
 
 /* 文章页H1-H6图标样式效果 */
+h1,h2,h3,h4,h5,h6 {
+  padding-left: 0!important;
+}
+.post-content h1:hover,.post-content h2:hover,.post-content h3:hover,.post-content h4:hover,.post-content h5:hover,.post-content h6:hover {
+  padding-left: 5px !important;
+}
 /* 控制风车转动速度 4s那里可以自己调节快慢 */
 h1::before,
 h2::before,
