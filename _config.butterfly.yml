@@ -1022,10 +1022,10 @@ instantpage: false
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   # Specify the field to use lazyload (site or post)
-  field: site
-  placeholder:
+  field: post
+  placeholder: /img/loading.gif
   blur: false
 
 # PWA
