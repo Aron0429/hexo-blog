@@ -24,9 +24,9 @@ type: 'link'
 
 站点名称：呆萌's Blog
 
-站点地址：[https://xdxmblog.cn](https://xdxmblog.cn)
+站点地址：[https://www.xdxmblog.cn](https://www.xdxmblog.cn)
 
-站点头像：[https://img.xdxmblog.cn/blogImage/avatar.jpeg](https://img.xdxmblog.cn/blogImage/avatar.jpeg)
+站点头像：[https://www.xdxmblog.cn/img/avatar.webp](https://www.xdxmblog.cn/img/avatar.webp)
 
 站点描述：记录两个程序员的点点滴滴
 
@@ -40,8 +40,8 @@ type: 'link'
 
 ```yaml
 站点名称：呆萌's Blog
-站点地址：https://xdxmblog.cn
-站点头像：https://img.xdxmblog.cn/blogImage/avatar.jpeg
+站点地址：https://www.xdxmblog.cn
+站点头像：https://www.xdxmblog.cn/img/avatar.webp
 站点描述：记录两个程序员的点点滴滴
 ```
 
@@ -51,8 +51,8 @@ type: 'link'
 
 ```yaml
 name: 呆萌's Blog
-link: https://xdxmblog.cn
-avatar: https://img.xdxmblog.cn/blogImage/avatar.jpeg
+link: https://www.xdxmblog.cn
+avatar: https://www.xdxmblog.cn/img/avatar.webp
 descr: 记录两个程序员的点点滴滴
 ```
 

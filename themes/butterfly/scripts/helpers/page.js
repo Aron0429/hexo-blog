@@ -29,16 +29,18 @@ hexo.extend.helper.register('cloudTags', function (options = {}) {
     return `rgb(${Math.max(r, 50)}, ${Math.max(g, 50)}, ${Math.max(b, 50)})`
   }
 
-  const generateStyle = (size, unit) =>
-    `font-size: ${parseFloat(size.toFixed(2)) + unit}; color: ${getRandomColor()};`
+  const generateStyle = (size, unit) => `font-size: ${parseFloat(size.toFixed(2)) + unit}; color: ${getRandomColor()};`
 
   const length = sizes.length - 1
-  const result = source.sort(orderby, order).map(tag => {
-    const ratio = length ? sizes.indexOf(tag.length) / length : 0
-    const size = minfontsize + ((maxfontsize - minfontsize) * ratio)
-    const style = generateStyle(size, unit)
-    return `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}</a>`
-  }).join('')
+  const result = source
+    .sort(orderby, order)
+    .map(tag => {
+      const ratio = length ? sizes.indexOf(tag.length) / length : 0
+      const size = minfontsize + (maxfontsize - minfontsize) * ratio
+      const style = generateStyle(size, unit)
+      return `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}</a>`
+    })
+    .join('')
 
   return result
 })
@@ -48,7 +50,10 @@ hexo.extend.helper.register('urlNoIndex', function (url = null, trailingIndex = 
 })
 
 hexo.extend.helper.register('md5', function (path) {
-  return crypto.createHash('md5').update(decodeURI(this.url_for(path))).digest('hex')
+  return crypto
+    .createHash('md5')
+    .update(decodeURI(this.url_for(path)))
+    .digest('hex')
 })
 
 hexo.extend.helper.register('injectHtml', data => {
@@ -65,7 +70,7 @@ hexo.extend.helper.register('findArchivesTitle', function (page, menu, date) {
   const defaultTitle = this._p('page.archives')
   if (!menu) return defaultTitle
 
-  const loop = (m) => {
+  const loop = m => {
     for (const key in m) {
       if (typeof m[key] === 'object') {
         const result = loop(m[key])
@@ -149,4 +154,24 @@ hexo.extend.helper.register('getPageType', (page, isHome) => {
 hexo.extend.helper.register('getVersion', () => {
   const { version } = require('../../package.json')
   return { hexo: hexo.version, theme: version }
+})
+
+hexo.extend.helper.register('authors', function (source = []) {
+  let result = ''
+  let authors = []
+  if (source.length) {
+    source.map(post => {
+      if (post.author && !authors.includes(post.author)) {
+        authors.push(post.author)
+      }
+    })
+  }
+  if (authors.length) {
+    result += '<ul class="category-list">'
+    authors.map(author => {
+      let count = source.filter(post => post.author == author).length
+      result += `<li class="category-list-item"><a class="category-list-link" href="/authors/${author}/">${author}</a><span class="category-list-count">${count}</span></li>`
+    })
+  }
+  return result
 })

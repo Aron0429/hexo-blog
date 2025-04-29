@@ -63,7 +63,7 @@ social:
 favicon: /img/favicon.ico
 
 avatar:
-  img: /img/avatar.jpeg
+  img: /img/avatar.webp
   effect: false
 
 # Disable all banner images
@@ -271,7 +271,7 @@ footer:
     since: 2017
   moe_icon: /img/moe_icon.png
   moe_icp: true
-  custom_text: 欢迎来到小呆&小萌的情侣博客
+  custom_text: 欢迎来到呆萌's Blog
   copyright: true # Copyright of theme and framework
 
 # --------------------------------------
@@ -595,7 +595,7 @@ waline:
     commentCount: false # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
     pageview: true # 文章阅读统计
     locale:
-      placeholder: 这里是小呆&小萌的情侣博客，欢迎评论与我们互动 #评论框的默认文字
+      placeholder: 这里是呆萌's Blog，欢迎评论与我们互动 #评论框的默认文字
     # Custom emoji
     emoji: false
     #   - https://unpkg.com/@waline/emojis@1.0.1/weibo
