@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 小呆&小萌的情侣博客
+title: 呆萌's Blog
 subtitle: ''
 description: '记录两个程序员的爱情点滴，学习笔记的小天地'
-keywords: 博客, 情侣博客, 情侣空间, 夫妻博客, 情侣记录
+keywords: Blog, 博客, 情侣博客, 情侣空间, 情侣记录
 author: 小呆&小萌
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -134,3 +134,7 @@ baidu_url_submit:
   host: www.xdxmblog.cn # 在百度站长平台中注册的域名，这个改为你自己的域名
   token: 6iBtZ4EGSLKcd4Tn # 请注意这是您的秘钥（百度站长密钥）
   path: baidu_urls.txt # 新链接会保存在此文本文档里（文本文件的文件名）
+
+lazyload:
+  enable: true
+  loadingImg: /img/loading.gif
