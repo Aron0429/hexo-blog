@@ -15,7 +15,7 @@ categories:
 
 在开发后台管理系统的时候，我们通常会在脚手架的基础上，利用UI框架快速搭建起Layout模板，而导航栏便是Layout里最常用的一个组件之一了。这篇文章主要用**Vue + Vue Router + Pinia + Element Plus**来快速实现一套Tab导航栏。
 
-![效果预览]https://img.xdxmblog.cn/images/article_47739_01.webp)
+![效果预览](https://img.xdxmblog.cn/images/article_47739_01.webp)
 
 ## 前置准备
 
