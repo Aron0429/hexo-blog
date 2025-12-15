@@ -51,7 +51,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/chinalink || 小呆 || '#24292e'
+  fab fa-github: https://github.com/Aron0429 || 小呆 || '#24292e'
   fa-brands fa-github: https://github.com/Silence-girl || 小萌 || '#24292e'
   fas fa-envelope: mailto:416681736@qq.com || Email || '#24292e'
   fa-sharp fa-solid fa-rss: /atom.xml || RSS || '#24292e'
@@ -99,7 +99,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background: /img/blog_bg.jpg
+background: /img/blog_bg.webp
 
 cover:
   # Disable the cover or not
