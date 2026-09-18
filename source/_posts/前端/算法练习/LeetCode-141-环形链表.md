@@ -22,8 +22,6 @@ categories:
 >
 > 如果链表中存在环 ，则返回`true`。 否则，返回`false`。
 
-<!--more-->
-
 示例：
 
 ![环形链表-示例图](https://img.xdxmblog.cn/images/article_37519_01.png)

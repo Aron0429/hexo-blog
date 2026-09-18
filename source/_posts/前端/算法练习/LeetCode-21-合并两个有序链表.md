@@ -18,8 +18,6 @@ categories:
 
 > 将两个升序链表合并为一个新的**升序**链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 
-<!--more-->
-
 示例：
 
 ![合并两个有序链表](https://img.xdxmblog.cn/images/article_39311_01.png)

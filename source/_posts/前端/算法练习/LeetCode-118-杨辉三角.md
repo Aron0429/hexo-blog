@@ -20,8 +20,6 @@ categories:
 >
 > 在「杨辉三角」中，每个数是它左上方和右上方的数的和。
 
-<!--more-->
-
 ![杨辉三角](https://img.xdxmblog.cn/images/article_24191_01.gif)
 
 示例：

@@ -18,8 +18,6 @@ updated: 2023-05-13 16:05:05
 
 > 给你单链表的头节点`head` ，请你反转链表，并返回反转后的链表。
 
-<!--more-->
-
 示例：
 
 ![反转链表](https://img.xdxmblog.cn/images/article_27687_01.png)
